@@ -1,3 +1,54 @@
+-------------------------------------
+
+Český jazykový balíček pro Hytale - Pomoz s překladem a opravami → GITHUB ← klikni
+
+Tento český jazykový balíček si klade za cíl poskytnout přirozenější a pohodlnější herní zážitek. Překládá prvky uživatelského rozhraní a běžné herní zprávy, díky čemuž je každodenní hraní i nastavení hry přehlednější a intuitivnější pro česky mluvící hráče.
+
+!!! Tento jazykový balíček plně podporuje českou diakritiku (á, č, ď, é, ě, í, ň, ó, ř, š, ť, ú, ů, ý, ž). !!!
+
+Návod k instalaci
+
+Najděte kořenový adresář hry. Pokud si nejste jisti, kde se nachází, otevřete launcher, přejděte do Nastavení (ikona ozubeného kola) a zvolte Otevřít adresář.
+
+Otevřete stažený soubor .zip a zkopírujte složku install do kořenového adresáře hry.
+
+Pokud budete vyzváni, zvolte Nahradit vše (nebo Nahradit soubory v cílovém umístění).
+
+Spusťte hru, otevřete Nastavení a nastavte jazyk na Češtinu.
+
+(dobrovolné) Pro kompletní vynucený přepis jazyka rozbal Assets.zip a přepiš v těchno umístěních originální soubory a znovu vytvoř Assets.zip:
+
+"\Hytale\install\release\package\game\latest\Assets.zip\Server\Languages\en-US"  "\Hytale\install\release\package\game\latest\Assets.zip\Common\Languages\en-US\avatarCustomization"
+
+Hotovo — překlad je nyní aktivní.
+
+Důležité:
+
+Pokud jste jazykový balíček stáhli prostřednictvím aplikace CurseForge, po instalaci odstraňte soubor .zip ze složky mods. Pokud by tam zůstal, může zabránit správnému načtení světa.
+
+Po dnešní aktualizaci (15. 01. 2026) může dojít k problému s aplikací překladu.
+
+Pro vyřešení tohoto problému postupujte následovně:
+
+Přejděte do Nastavení a zvolte Otevřít adresář.
+
+Odinstalujte hru.
+
+Znovu nainstalujte hru.
+
+Aplikujte překlad pomocí souborů rozbalených ze .zip archivu (nepoužívejte .zip přímo).
+
+Tento postup by měl problém vyřešit.
+
+Pokud chceš originální soubory jazyka hry tak jdi do:
+
+"\Hytale\install\release\package\game\latest\Assets.zip\Server\Languages\en-US" a "\Hytale\install\release\package\game\latest\Assets.zip\Common\Languages\en-US\avatarCustomization"
+
+Stav překladu
+Tento projekt je stále ve vývoji. Některé řádky mohou zůstat nepřeložené nebo je lze dále vylepšit. Jazykový balíček bude v budoucích aktualizacích dále zpřesňován a rozšiřován.
+
+-------------------------------------
+
 # HytaleCzechTranslation
 Czech Language Pack for Hytale - Contribute to this project → GITHUB ← click
 
@@ -48,52 +99,3 @@ If you want to find original language files you can go in:
 Translation Status
 
 This project is still a work in progress. Some lines may remain untranslated or could be further improved. The language pack will be refined and expanded in future updates.
-
--------------------------------------
-
-Český jazykový balíček pro Hytale - Pomoz s překladem a opravami → GITHUB ← klikni
-
-Tento český jazykový balíček si klade za cíl poskytnout přirozenější a pohodlnější herní zážitek. Překládá prvky uživatelského rozhraní a běžné herní zprávy, díky čemuž je každodenní hraní i nastavení hry přehlednější a intuitivnější pro česky mluvící hráče.
-
-!!! Tento jazykový balíček plně podporuje českou diakritiku (á, č, ď, é, ě, í, ň, ó, ř, š, ť, ú, ů, ý, ž). !!!
-
-Návod k instalaci
-
-Najděte kořenový adresář hry. Pokud si nejste jisti, kde se nachází, otevřete launcher, přejděte do Nastavení (ikona ozubeného kola) a zvolte Otevřít adresář.
-
-Otevřete stažený soubor .zip a zkopírujte složku install do kořenového adresáře hry.
-
-Pokud budete vyzváni, zvolte Nahradit vše (nebo Nahradit soubory v cílovém umístění).
-
-Spusťte hru, otevřete Nastavení a nastavte jazyk na Češtinu.
-
-(dobrovolné) Pro kompletní vynucený přepis jazyka rozbal Assets.zip a přepiš v těchno umístěních originální soubory a znovu vytvoř Assets.zip:
-
-"\Hytale\install\release\package\game\latest\Assets.zip\Server\Languages\en-US"  "\Hytale\install\release\package\game\latest\Assets.zip\Common\Languages\en-US\avatarCustomization"
-
-Hotovo — překlad je nyní aktivní.
-
-Důležité:
-
-Pokud jste jazykový balíček stáhli prostřednictvím aplikace CurseForge, po instalaci odstraňte soubor .zip ze složky mods. Pokud by tam zůstal, může zabránit správnému načtení světa.
-
-Po dnešní aktualizaci (15. 01. 2026) může dojít k problému s aplikací překladu.
-
-Pro vyřešení tohoto problému postupujte následovně:
-
-Přejděte do Nastavení a zvolte Otevřít adresář.
-
-Odinstalujte hru.
-
-Znovu nainstalujte hru.
-
-Aplikujte překlad pomocí souborů rozbalených ze .zip archivu (nepoužívejte .zip přímo).
-
-Tento postup by měl problém vyřešit.
-
-Pokud chceš originální soubory jazyka hry tak jdi do:
-
-"\Hytale\install\release\package\game\latest\Assets.zip\Server\Languages\en-US" a "\Hytale\install\release\package\game\latest\Assets.zip\Common\Languages\en-US\avatarCustomization"
-
-Stav překladu
-Tento projekt je stále ve vývoji. Některé řádky mohou zůstat nepřeložené nebo je lze dále vylepšit. Jazykový balíček bude v budoucích aktualizacích dále zpřesňován a rozšiřován.
