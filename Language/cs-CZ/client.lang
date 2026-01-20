@@ -2260,3 +2260,17 @@ feedback.success.submitMore = Odeslat více
 
 
 bugReportButton.tooltip = Nahlásit chybu nebo odeslat zpětnou vazbu
+# === patchline ===
+# Patchlines allow early release of content to help players test new features
+
+patchline.launchNotification.title = Předběžné sestavení (Patchline)
+patchline.launchNotification.text = Používáte předběžné sestavení (patchline) hry Hytale.\n\n\
+    Tato verze může obsahovat experimentální funkce a chyby.\n\n\
+    Vaše zpětná vazba nám pomáhá hru vylepšovat!
+
+patchline.worldWarning.title = Varování verze (Patchline)
+patchline.worldWarning.text = Chystáte se otevřít svět v jiné verzi sestavení.\n\n\
+    Otevření tohoto světa může způsobit změny, které mohou ovlivnit váš uložený postup.\n\n\
+    Doporučujeme si před pokračováním vytvořit záložní kopii.
+patchline.worldWarning.openAnyway = Přesto otevřít
+patchline.worldWarning.duplicateWorld = Duplikovat svět

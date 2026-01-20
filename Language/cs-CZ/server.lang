@@ -658,6 +658,9 @@ builderTools.copycut.noSelection = Nemáš nic vybráno!
 builderTools.commands.clearEntities.desc = Odstraní všechny entity v rámci aktuálního výběru.
 builderTools.commands.clearEntities.noSelection = Nemáš nic vybráno!
 builderTools.commands.clearEntities.cleared = {count, plural, one {1 entita byla odstraněna} few {{count, number} entity byly odstraněny} other {{count, number} entit bylo odstraněno}} z výběru.
+commands.clearEntities.desc = Odstraní všechny entity v rámci aktuálního výběru
+commands.clearEntities.noSelection = Nemáte nic vybráno!
+commands.clearEntities.cleared = Z výběru bylo odstraněno {count, plural, one {1 entita} few {{count, number} entity} other {{count, number} entit}}
 builderTools.edit.invalidBlockId = Neplatný identifikátor bloku: {id}
 builderTools.environment.envNotFound = Prostředí s názvem „{name}“ nebylo nalezeno.
 builderTools.invalidBlockType = {name} „{key}“ není platný typ bloku.
@@ -808,6 +811,10 @@ commands.memories.level.desc = Zjistit úroveň vzpomínek
 commands.memories.level.success = Aktuální úroveň Vzpomínek je {level}
 commands.memories.unlockAll.desc = Odemknout všechny vzpomínky
 commands.memories.unlockAll.success = Všechny Vzpomínky byly odemčeny
+commands.memories.setCount.desc = [TMP] Nastavit počet zaznamenaných vzpomínek pro testování
+commands.memories.setCount.count.desc = [TMP] Počet vzpomínek, které se mají zaznamenat
+commands.memories.setCount.success = [TMP] Počet zaznamenaných vzpomínek nastaven na {actual, number} (požadováno: {requested, number})
+commands.memories.setCount.invalid = [TMP] Neplatný počet. Musí být 0 nebo vyšší.
 commands.objective = Příkazy související s úkoly (objectives)
 commands.objective.objectiveNotFound = Úkol '{id}' nebyl nalezen!
 commands.objective.objectiveLineNotFound = Úkolová linie '{id}' nebyla nalezena!
@@ -1448,6 +1455,11 @@ commands.parsing.argtype.tickrate.usage = Hodnota frekvence (např. 30tps, 33ms,
 commands.parsing.argtype.tickrate.fail = Nelze zpracovat: '{input}'. Použijte formát 30tps, 33ms nebo 30.
 commands.parsing.argtype.tickrate.empty = Tick rate nemůže být prázdný
 commands.parsing.argtype.tickrate.invalidMs = Neplatná hodnota ms: '{input}'. Musí být kladná.
+commands.parsing.argtype.playerUuidLookup.name = UUID/Jméno hráče (s vyhledáváním)
+commands.parsing.argtype.playerUuidLookup.usage = UUID nebo uživatelské jméno hráče. Pokud není nalezen lokálně, provede se vzdálené vyhledání pomocí služby Profile Service.
+commands.parsing.argtype.playerUuidLookup.noAuth = Nelze vyhledat '{input}' – server není autentizován. Pro autentizaci použijte /auth login.
+commands.parsing.argtype.playerUuidLookup.lookupError = Vyhledávání '{input}' selhalo: {error}
+commands.parsing.argtype.playerUuidLookup.notFound = Hráč '{input}' nebyl nalezen lokálně ani přes vzdálené vyhledávání.
 commands.help.usage = Použití
 commands.help.usagecolon = Použití: {usage}
 commands.help.noPermissibleSubCommand = Nejsou k dispozici žádné povolené podpříkazy
@@ -1615,6 +1627,7 @@ commands.give.received = Obdrženo {quantity, number} ks {item}
 commands.give.item.desc = Předmět k předání
 commands.give.quantity.desc = Množství předmětů
 commands.give.metadata.desc = Metadata předmětu jako JSON řetězec
+commands.give.durability.desc = Odolnost (durability) předmětu
 commands.give.invalidMetadata = Neplatný formát metadat: {error}
 commands.kick.success = Hráč {username} byl vyhozen!
 commands.version.response = HytaleServer v{version} ({patchline})
@@ -6380,46 +6393,54 @@ items.Wood_Amber_Branch_Long.name = Jantarová větev – dlouhá
 items.Wood_Amber_Branch_Short.name = Jantarová větev – krátká
 items.Wood_Amber_Roots.name = Jantarové kořeny
 items.Wood_Amber_Trunk.name = Jantarový kmen
+items.Wood_Amber_Trunk.description = [TMP] Zlatodřevo
 items.Wood_Amber_Trunk_Full.name = Kmen jantarového stromu
 items.Wood_Ash_Branch_Corner.name = Jasanová větev – rohová
 items.Wood_Ash_Branch_Long.name = Jasanová větev – dlouhá
 items.Wood_Ash_Branch_Short.name = Jasanová větev – krátká
 items.Wood_Ash_Roots.name = Jasanové kořeny
 items.Wood_Ash_Trunk.name = Jasanový kmen
+items.Wood_Ash_Trunk.description = [TMP] Tvrdé dřevo
 items.Wood_Ash_Trunk_Full.name = Jasanový kmen (celý)
 items.Wood_Aspen_Branch_Corner.name = Osiková větev – rohová
 items.Wood_Aspen_Branch_Long.name = Osiková větev – dlouhá
 items.Wood_Aspen_Branch_Short.name = Osiková větev – krátká
 items.Wood_Aspen_Roots.name = Osikové kořeny
 items.Wood_Aspen_Trunk.name = Osikový kmen
+items.Wood_Aspen_Trunk.description = [TMP] Měkké dřevo
 items.Wood_Aspen_Trunk_Full.name = Osikový kmen (celý)
 items.Wood_Azure_Branch_Corner.name = Azurová větev – rohová
 items.Wood_Azure_Branch_Long.name = Azurová větev – dlouhá
 items.Wood_Azure_Branch_Short.name = Azurová větev – krátká
 items.Wood_Azure_Roots.name = Azurové kořeny
 items.Wood_Azure_Trunk.name = Azurový kmen
+items.Wood_Azure_Trunk.description = [TMP] Azurové dřevo
 items.Wood_Azure_Trunk_Full.name = Azurový kmen stromu
 items.Wood_Bamboo_Branch_Long.name = Bambusová větev – dlouhá
 items.Wood_Bamboo_Branch_Long_Deco.name = Bambusová větev – dlouhá (dekorativní)
 items.Wood_Bamboo_Trunk.name = Bambusový kmen
+items.Wood_Bamboo_Trunk.description = [TMP] Tropické dřevo
 items.Wood_Bamboo_Trunk_Deco.name = Bambusový kmen (dekorativní)
 items.Wood_Banyan_Branch_Corner.name = Větev fíkovníku – rohová
 items.Wood_Banyan_Branch_Long.name = Větev fíkovníku – dlouhá
 items.Wood_Banyan_Branch_Short.name = Větev fíkovníku – krátká
 items.Wood_Banyan_Roots.name = Kořeny fíkovníku
 items.Wood_Banyan_Trunk.name = Kmen fíkovníku (Banyan)
+items.Wood_Banyan_Trunk.description = [TMP] Měkké dřevo
 items.Wood_Banyan_Trunk_Full.name = Kmen fíkovníku (celý)
 items.Wood_Beech_Branch_Corner.name = Buková větev – rohová
 items.Wood_Beech_Branch_Long.name = Buková větev – dlouhá
 items.Wood_Beech_Branch_Short.name = Buková větev – krátká
 items.Wood_Beech_Roots.name = Bukové kořeny
 items.Wood_Beech_Trunk.name = Bukový kmen
+items.Wood_Beech_Trunk.description = [TMP] Měkké dřevo
 items.Wood_Beech_Trunk_Full.name = Bukový kmen (celý)
 items.Wood_Birch_Branch_Corner.name = Březová větev – rohová
 items.Wood_Birch_Branch_Long.name = Březová větev – dlouhá
 items.Wood_Birch_Branch_Short.name = Březová větev – krátká
 items.Wood_Birch_Roots.name = Březové kořeny
 items.Wood_Birch_Trunk.name = Březový kmen
+items.Wood_Birch_Trunk.description = [TMP] Světlé dřevo
 items.Wood_Birch_Trunk_Full.name = Březový kmen (celý)
 items.Wood_Blackwood_Beam.name = Nosník z černodřevu
 items.Wood_Blackwood_Decorative.name = Prkna z černodřevu (dekorativní)
@@ -6439,30 +6460,35 @@ items.Wood_Bottletree_Branch_Long.name = Větev lahvovníku – dlouhá
 items.Wood_Bottletree_Branch_Short.name = Větev lahvovníku – krátká
 items.Wood_Bottletree_Roots.name = Kořeny lahvovníku
 items.Wood_Bottletree_Trunk.name = Kmen lahvovníku
+items.Wood_Bottletree_Trunk.description = [TMP] Suché dřevo
 items.Wood_Bottletree_Trunk_Full.name = Kmen lahvovníku (celý)
 items.Wood_Burnt_Branch_Corner.name = Spálená větev – rohová
 items.Wood_Burnt_Branch_Long.name = Spálená větev – dlouhá
 items.Wood_Burnt_Branch_Short.name = Spálená větev – krátká
 items.Wood_Burnt_Roots.name = Spálené kořeny
 items.Wood_Burnt_Trunk.name = Spálený kmen
+items.Wood_Burnt_Trunk.description = [TMP] Černodřevo
 items.Wood_Burnt_Trunk_Full.name = Spálený kmen stromu
 items.Wood_Camphor_Branch_Corner.name = Kafrovníková větev – rohová
 items.Wood_Camphor_Branch_Long.name = Kafrovníková větev – dlouhá
 items.Wood_Camphor_Branch_Short.name = Kafrovníková větev – krátká
 items.Wood_Camphor_Roots.name = Kafrovníkové kořeny
 items.Wood_Camphor_Trunk.name = Kafrovníkový kmen
+items.Wood_Camphor_Trunk.description = [TMP] Světlé dřevo
 items.Wood_Camphor_Trunk_Full.name = Kmen kafrovníku (celý)
 items.Wood_Cedar_Branch_Corner.name = Cedrová větev – rohová
 items.Wood_Cedar_Branch_Long.name = Cedrová větev – dlouhá
 items.Wood_Cedar_Branch_Short.name = Cedrová větev – krátká
 items.Wood_Cedar_Roots.name = Cedrové kořeny
 items.Wood_Cedar_Trunk.name = Cedrový kmen
+items.Wood_Cedar_Trunk.description = [TMP] Tmavé dřevo
 items.Wood_Cedar_Trunk_Full.name = Cedrový kmen (celý)
 items.Wood_Crystal_Branch_Corner.name = Větev krystalového dřeva – rohová
 items.Wood_Crystal_Branch_Long.name = Větev krystalového dřeva – dlouhá
 items.Wood_Crystal_Branch_Short.name = Větev krystalového dřeva – krátká
 items.Wood_Crystal_Roots.name = Kořeny krystalového stromu
 items.Wood_Crystal_Trunk.name = Krystalový kmen
+items.Wood_Crystal_Trunk.description = [TMP] Krystalové dřevo
 items.Wood_Crystal_Trunk_Full.name = Kmen krystalového stromu
 items.Wood_Darkwood_Beam.name = Nosník z tmavého dřeva
 items.Wood_Darkwood_Decorative.name = Prkna z tmavého dřeva (dekorativní)
@@ -6495,6 +6521,7 @@ items.Wood_Dry_Branch_Long.name = Suchá větev – dlouhá
 items.Wood_Dry_Branch_Short.name = Suchá větev – krátká
 items.Wood_Dry_Roots.name = Suché kořeny
 items.Wood_Dry_Trunk.name = Suchý kmen
+items.Wood_Dry_Trunk.description = [TMP] Suché dřevo
 items.Wood_Dry_Trunk_Full.name = Suchý kmen (celý)
 items.Wood_Drywood_Beam.name = Nosník ze suchého dřeva
 items.Wood_Drywood_Decorative.name = Prkna ze suchého dřeva (dekorativní)
@@ -6514,12 +6541,14 @@ items.Wood_Fig_Blue_Branch_Long.name = Větev modrého fíkovníku – dlouhá
 items.Wood_Fig_Blue_Branch_Short.name = Větev modrého fíkovníku – krátká
 items.Wood_Fig_Blue_Roots.name = Kořeny modrého fíkovníku
 items.Wood_Fig_Blue_Trunk.name = Kmen modrého fíkovníku
+items.Wood_Fig_Blue_Trunk.description = [TMP] Rudé dřevo
 items.Wood_Fig_Blue_Trunk_Full.name = Kmen modrého fíkovníku (celý)
 items.Wood_Fir_Branch_Corner.name = Jedlová větev – rohová
 items.Wood_Fir_Branch_Long.name = Jedlová větev – dlouhá
 items.Wood_Fir_Branch_Short.name = Jedlová větev – krátká
 items.Wood_Fir_Roots.name = Jedlové kořeny
 items.Wood_Fir_Trunk.name = Jedlový kmen
+items.Wood_Fir_Trunk.description = [TMP] Tvrdé dřevo
 items.Wood_Fir_Trunk_Full.name = Jedlový kmen (celý)
 items.Wood_Fire_Branch_Corner.name = Větev palivového dřeva – rohová
 items.Wood_Fire_Branch_Long.name = Větev palivového dřeva – dlouhá
@@ -6575,6 +6604,7 @@ items.Wood_Gumboab_Branch_Long.name = Větev Gumboabu – dlouhá
 items.Wood_Gumboab_Branch_Short.name = Větev Gumboabu – krátká
 items.Wood_Gumboab_Roots.name = Kořeny Gumboabu
 items.Wood_Gumboab_Trunk.name = Poleno Gumboabu
+items.Wood_Gumboab_Trunk.description = [TMP] Lightwood
 items.Wood_Gumboab_Trunk_Full.name = Kmen stromu Gumboab
 items.Wood_Hardwood_Beam.name = Nosník z tvrdého dřeva
 items.Wood_Hardwood_Decorative.name = Prkna z tvrdého dřeva (dekorativní)
@@ -6590,11 +6620,13 @@ items.Wood_Hardwood_Roof_Shallow.name = Střecha z tvrdého dřeva (mírná)
 items.Wood_Hardwood_Roof_Steep.name = Střecha z tvrdého dřeva (strmá)
 items.Wood_Hardwood_Stairs.name = Schody z tvrdého dřeva
 items.Wood_Ice_Trunk.name = Ledové poleno
+items.Wood_Ice_Trunk.description = [TMP] Ledové dřevo
 items.Wood_Jungle_Branch_Corner.name = Džunglová větev – rohová
 items.Wood_Jungle_Branch_Long.name = Džunglová větev – dlouhá
 items.Wood_Jungle_Branch_Short.name = Džunglová větev – krátká
 items.Wood_Jungle_Roots.name = Kořeny džungle
 items.Wood_Jungle_Trunk.name = Džunglový kmen
+items.Wood_Jungle_Trunk.description = [TMP] Zelenodřevo
 items.Wood_Jungle_Trunk_Full.name = Kmen džunglového stromu
 items.Wood_Lightwood_Beam.name = Nosník ze světlého dřeva
 items.Wood_Lightwood_Decorative.name = Prkna ze světlého dřeva (dekorativní)
@@ -6614,12 +6646,14 @@ items.Wood_Maple_Branch_Long.name = Javorová větev – dlouhá
 items.Wood_Maple_Branch_Short.name = Javorová větev – krátká
 items.Wood_Maple_Roots.name = Javorové kořeny
 items.Wood_Maple_Trunk.name = Javorový kmen
+items.Wood_Maple_Trunk.description = [TMP] Rudé dřevo
 items.Wood_Maple_Trunk_Full.name = Javorový kmen (celý)
 items.Wood_Oak_Branch_Corner.name = Dubová větev – rohová
 items.Wood_Oak_Branch_Long.name = Dubová větev – dlouhá
 items.Wood_Oak_Branch_Short.name = Dubová větev – krátká
 items.Wood_Oak_Roots.name = Dubové kořeny
 items.Wood_Oak_Trunk.name = Dubový kmen
+items.Wood_Oak_Trunk.description = [TMP] Tvrdé dřevo
 items.Wood_Oak_Trunk_Full.name = Dubový kmen (celý)
 items.Wood_Oak_Trunk_Half.name = Poloviční dubové poleno
 items.Wood_Oak_Trunk_Stairs.name = Schody z dubového kmene
@@ -6628,24 +6662,28 @@ items.Wood_Palm_Branch_Long.name = Palmová větev – dlouhá
 items.Wood_Palm_Branch_Short.name = Palmová větev – krátká
 items.Wood_Palm_Roots.name = Palmové kořeny
 items.Wood_Palm_Trunk.name = Palmový kmen
+items.Wood_Palm_Trunk.description = [TMP] Zlatodřevo
 items.Wood_Palm_Trunk_Full.name = Palmový kmen (celý)
 items.Wood_Palo_Branch_Corner.name = Větev Palo – rohová
 items.Wood_Palo_Branch_Long.name = Větev Palo – dlouhá
 items.Wood_Palo_Branch_Short.name = Větev Palo – krátká
 items.Wood_Palo_Roots.name = Kořeny Palo
 items.Wood_Palo_Trunk.name = Kmen Palo
+items.Wood_Palo_Trunk.description = [TMP] Zelenodřevo
 items.Wood_Palo_Trunk_Full.name = Kmen Palo (celý)
 items.Wood_Petrified_Branch_Corner.name = Zkamenělá větev – rohová
 items.Wood_Petrified_Branch_Long.name = Zkamenělá větev – dlouhá
 items.Wood_Petrified_Branch_Short.name = Zkamenělá větev – krátká
 items.Wood_Petrified_Roots.name = Zkamenělé kořeny
 items.Wood_Petrified_Trunk.name = Zkamenělý kmen
+items.Wood_Petrified_Trunk.description = [TMP] Mrtvé dřevo
 items.Wood_Petrified_Trunk_Full.name = Zkamenělý kmen stromu
 items.Wood_Poisoned_Branch_Corner.name = Otrávená větev – rohová
 items.Wood_Poisoned_Branch_Long.name = Otrávená větev – dlouhá
 items.Wood_Poisoned_Branch_Short.name = Otrávená větev – krátká
 items.Wood_Poisoned_Roots.name = Otrávené kořeny
 items.Wood_Poisoned_Trunk.name = Otrávený kmen
+items.Wood_Poisoned_Trunk.description = [TMP] Mrtvé dřevo
 items.Wood_Poisoned_Trunk_Full.name = Otrávený kmen stromu
 items.Wood_Redwood_Beam.name = Nosník ze sekvoje
 items.Wood_Redwood_Branch_Corner.name = Větev sekvoje – rohová
@@ -6665,12 +6703,14 @@ items.Wood_Redwood_Roof_Steep.name = Střecha ze sekvoje (strmá)
 items.Wood_Redwood_Roots.name = Kořeny sekvoje
 items.Wood_Redwood_Stairs.name = Schody ze sekvoje
 items.Wood_Redwood_Trunk.name = Kmen sekvoje
+items.Wood_Redwood_Trunk.description = [TMP] Rudé dřevo
 items.Wood_Redwood_Trunk_Full.name = Kmen sekvoje (celý)
 items.Wood_Sallow_Branch_Corner.name = Nažloutlá větev – rohová
 items.Wood_Sallow_Branch_Long.name = Nažloutlá větev – dlouhá
 items.Wood_Sallow_Branch_Short.name = Nažloutlá větev – krátká
 items.Wood_Sallow_Roots.name = Nažloutlé kořeny
 items.Wood_Sallow_Trunk.name = Nažloutlý kmen
+items.Wood_Sallow_Trunk.description = [TMP] Zlatodřevo
 items.Wood_Sallow_Trunk_Full.name = Nažloutlý kmen stromu (celý)
 items.Wood_Softwood_Beam.name = Nosník z měkkého dřeva
 items.Wood_Softwood_Decorative.name = Prkna z měkkého dřeva (dekorativní)
@@ -6690,6 +6730,7 @@ items.Wood_Spiral_Branch_Long.name = Spirálová větev – dlouhá
 items.Wood_Spiral_Branch_Short.name = Spirálová větev – krátká
 items.Wood_Spiral_Roots.name = Spirálové kořeny
 items.Wood_Spiral_Trunk.name = Spirálový kmen
+items.Wood_Spiral_Trunk.description = [TMP] Spirálové dřevo
 items.Wood_Spiral_Trunk_Full.name = Spirálový kmen stromu (celý)
 items.Wood_Sticks.name = Hromada klacků
 items.Wood_Stormbark_Branch_Corner.name = Větev bouřkové kůry – rohová
@@ -6721,12 +6762,14 @@ items.Wood_Windwillow_Branch_Long.name = Větev větrné vrby – dlouhá
 items.Wood_Windwillow_Branch_Short.name = Větev větrné vrby – krátká
 items.Wood_Windwillow_Roots.name = Kořeny větrné vrby
 items.Wood_Windwillow_Trunk.name = Kmen větrné vrby
+items.Wood_Windwillow_Trunk.description = [TMP] Větrovrba
 items.Wood_Windwillow_Trunk_Full.name = Kmen větrné vrby (celý)
 items.Wood_Wisteria_Wild_Branch_Corner.name = Větev glycínie – rohová
 items.Wood_Wisteria_Wild_Branch_Long.name = Větev glycínie – dlouhá
 items.Wood_Wisteria_Wild_Branch_Short.name = Větev glycínie – krátká
 items.Wood_Wisteria_Wild_Roots.name = Kořeny glycínie
 items.Wood_Wisteria_Wild_Trunk.name = Kmen divoké glycínie
+items.Wood_Wisteria_Wild_Trunk.description = [TMP] Darkwood
 items.Wood_Wisteria_Wild_Trunk_Full.name = Kmen glycínie (celý)
 items.Prototype_Geyser.name = Prototyp gejzíru
 items.Ingredient_Chitin_Sturdy.name = Odolný chitin
@@ -6857,33 +6900,33 @@ items.Rock_Salt.name = Solný blok
 items.Rock_Salt.description = Lze zpracovat u <item is="Bench_Cooking"/>.
 items.Rock_Salt_Half.name = Poloviční solný blok
 items.Rock_Slate_Cobble_Corner.name = Břidlicový valoun – rohový
-items.Plant_Fruit_Apple.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Berries_Red.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Berries_Blue.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Orange.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Fruit_Pear.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Carrot_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Corn_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Potato_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Pumpkin_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Onion_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Lettuce_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Turnip_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Tomato_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Rice_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Cauliflower_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Chilli_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Crop_Aubergine_Item.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Mushroom_Brown.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Plant_Mushroom_Red.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
-items.Food_Vegetable_Cooked.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení výdrže II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
-items.Food_Kebab_Fruit.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení výdrže II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
-items.Food_Kebab_Vegetable.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení výdrže II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
-items.Food_Kebab_Mushroom.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení výdrže II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
-items.Food_Salad_Berry.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení výdrže II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
-items.Food_Salad_Mushroom.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení výdrže II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
-items.Food_Salad_Caesar.description = [TMP] Okamžitě obnoví <color is="#ffffff">15 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví III</color>\n• <color is="#ffffff">Zvýšení výdrže III</color>\n\nTrvání: <color is="#ffffff">6:00</color>
-items.Food_Pie_Apple.description = [TMP] Okamžitě obnoví <color is="#ffffff">15 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví III</color>\n• <color is="#ffffff">Zvýšení výdrže III</color>\n\nTrvání: <color is="#ffffff">6:00</color>
+items.Plant_Fruit_Apple.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Berries_Red.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Berries_Blue.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Orange.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Pear.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Azure.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Coconut.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Mango.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Pinkberry.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Poison.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Spiral.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Fruit_Windwillow.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Carrot_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Corn_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Potato_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Pumpkin_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Onion_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Lettuce_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Turnip_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Tomato_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Rice_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Cauliflower_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Chilli_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Crop_Aubergine_Item.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Mushroom_Brown.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Plant_Mushroom_Red.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Food_Vegetable_Cooked.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Posílení výdrže I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
 items.Recipe_Food_Pie_Apple.name = [TMP] Recept: Jablečný koláč
 items.Recipe_Food_Pie_Apple.description = [TMP] Naučí vás recept na <item is="Food_Pie_Apple"/>.n\nOkamžitě obnoví <color is="#ffffff">15 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví III</color>\n• <color is="#ffffff">Zvýšení výdrže III</color>\n\nTrvání: <color is="#ffffff">6:00</color>
 items.Recipe_Food_Pie_Pumpkin.name = [TMP] Recept: Dýňový koláč
@@ -6893,8 +6936,8 @@ items.Recipe_Food_Pie_Meat.description = [TMP] Naučí vás recept na <item is="
 items.Recipe_Food_Salad_Caesar.name = [TMP] Recept: Salát Caesar
 items.Recipe_Food_Salad_Caesar.description = [TMP] Naučí vás recept na <item is="Food_Salad_Caesar"/>.n\nOkamžitě obnoví <color is="#ffffff">15 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví III</color>\n• <color is="#ffffff">Zvýšení výdrže III</color>\n\nTrvání: <color is="#ffffff">6:00</color>
 items.Food_Pie_Pumpkin.description = [TMP] Okamžitě obnoví <color is="#ffffff">15 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví III</color>\n• <color is="#ffffff">Zvýšení výdrže III</color>\n\nTrvání: <color is="#ffffff">6:00</color>
-items.Food_Wildmeat_Cooked.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení zdraví II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
-items.Food_Fish_Grilled.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení zdraví II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
+items.Food_Wildmeat_Cooked.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
+items.Food_Fish_Grilled.description = [TMP] Okamžitě obnovuje <color is="#ffffff">5 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví I</color>\n• <color is="#ffffff">Zvýšení zdraví I</color>\n\nTrvání: <color is="#ffffff">0:45</color>
 items.Food_Kebab_Meat.description = [TMP] Okamžitě obnoví <color is="#ffffff">10 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví II</color>\n• <color is="#ffffff">Zvýšení zdraví II</color>\n\nTrvání: <color is="#ffffff">2:30</color>
 items.Food_Pie_Meat.description = [TMP] Okamžitě obnoví <color is="#ffffff">15 %</color> zdraví a poskytuje:\n\n• <color is="#ffffff">Regenerace zdraví III</color>\n• <color is="#ffffff">Zvýšení zdraví III</color>\n\nTrvání: <color is="#ffffff">6:00</color>
 items.Food_Wildmeat_Raw.description = [TMP] Okamžitě obnoví <color is="#ffffff">5 %</color> zdraví.
@@ -6975,7 +7018,7 @@ memories.general.recordNum = Záznam: {count, number} {count, plural, one {vzpom
 memories.general.collected = Sebrána nová vzpomínka! Objeveno: „{memoryTitle}“!
 memories.general.featureUnlockedNotification = Vzpomínky odemčeny! Prozkoumejte různé verze Orbisu a sbírejte památky!
 memories.general.featureUnlockedMessage = Odemkli jste funkci Vzpomínky!\nKdyž narazíte na tvory, nasbíráte vzpomínky, které se uloží do vašeho inventáře.\nDoneste tyto vzpomínky k Srdci Orbisu, abyste je uložili a odemkli odměny!
-memories.general.discovered.tooltipText = Vzpomínka objevena!
+memories.general.discovered.tooltipText = Byla objevena nová vzpomínka!\n\nPro její obnovení se vraťte k Srdci Orbisu v Zapomenutém chrámu.
 memories.general.undiscovered.tooltipText = Pokračujte v průzkumu, abyste objevili tuto vzpomínku!
 memories.general.memoriesLevelProgress = Úroveň vzpomínek: {level} (další úroveň za {count, plural, one {1 vzpomínku} few {{count, number} vzpomínky} other {{count, number} vzpomínek}})
 memories.general.chestLocked.tooltipText = [TMP] <color is="#990000"><b>Uzamčeno</b></color> \n<color is="#888888">Navraťte {count, number} {count, plural, one {vzpomínku} few {vzpomínky} other {vzpomínek}} pro odemčení.</color>
