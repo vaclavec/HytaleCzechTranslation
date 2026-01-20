@@ -1,0 +1,34 @@
+earSide = strana ucha
+earSide.left = Vlevo
+earSide.right = Vpravo
+earSide.both = Oba
+
+pattern.skull = Vzor lebky
+pattern.star = Vzor hvězdy
+pattern.gaia = Vzor pryzmatického stromu
+pattern.cat = Vzor kočky
+pattern.bunny = Vzor králíka
+pattern.unicorn = Vzor jednorožce
+pattern.cat = Vzor kočky
+pattern.play = Vzor tlačítka přehrávání
+pattern.play_inverted = Obrácený vzor tlačítka přehrávání
+
+pants.dungareesshorts = Šortky s popruhy
+pants.bracedshorts = Zapínané šortky
+pants.dungarees = Overaly
+pants.bracedpants = Kalhoty s popruhy
+
+default = Výchozí
+
+overtops.Scavenger_Poncho = Bez Lebky
+
+capes.no_neck = Bez Krku
+
+haircuts.Dreadlocks01.name = Dredy 1
+haircuts.Dreadlocks02.name = Dredy 2
+haircuts.Dreadlocks03.name = Dredy 3
+haircuts.SlickbackCowlick.name = [TMP] Pompadour s hladkými zády
+
+headaccessory.Logo_Cap_Movie.name = Logo filmu
+headaccessory.Logo_Cap_Heart.name = Logo srdce
+headaccessory.Logo_Cap_Hypixel.name = Logo Hypixelu

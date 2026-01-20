@@ -1,0 +1,2262 @@
+# === assetEditor ===
+assetEditor.mainMenu.connection.connecting = Připojování k serveru...
+assetEditor.mainMenu.connection.authenticating = Ověřování...
+assetEditor.mainMenu.title = Otevřít editor
+assetEditor.mainMenu.cosmeticsEditor = Kosmetika
+assetEditor.mainMenu.servers = Servery
+assetEditor.mainMenu.disconnectionContainer.title = Odpojeno od serveru!
+assetEditor.mainMenu.disconnectionContainer.reconnect = Připojit znovu
+assetEditor.mainMenu.connection.error.failedAuthentication = Chyba ověření na serveru
+assetEditor.mainMenu.connection.error.failedToEstablishConnection = Nelze navázat spojení se serverem.
+assetEditor.mainMenu.settingsButton = Nastavení
+
+assetEditor.settings.title = Nastavení
+
+assetEditor.settings.setting.diagnosticMode = Diagnostický režim
+assetEditor.settings.setting.useSystemLanguage = Použít systémový jazyk
+assetEditor.settings.setting.language = Jazyk
+assetEditor.settings.setting.fullscreen = Celá obrazovka
+assetEditor.settings.setting.exportPath = Exportovat složku
+assetEditor.settings.setting.exportPath.dialogTitle = Vyberte složku exportu
+assetEditor.settings.setting.exportPath.dialogConfirmationButton = Vybrat jako složku exportu
+
+assetEditor.mainMenu.errors.failedToSaveServerList = Nelze uložit seznam serverů.
+
+assetEditor.mainMenu.serverModal.titleAdd = Přidat server
+assetEditor.mainMenu.serverModal.titleEdit = Upravit server
+assetEditor.mainMenu.serverModal.errors.enterName = Zadejte prosím název.
+assetEditor.mainMenu.serverModal.errors.enterHostname = Zadejte název hostitele.
+assetEditor.mainMenu.serverModal.errors.nameAlreadyInUse = Tento název je již používán.
+
+assetEditor.mainMenu.removeServerModal.title = Odstranit server "{serverName}" ze seznamu?
+
+assetEditor.ipcServerConfirmation.title = Připojit se k serveru?
+assetEditor.ipcServerConfirmation.description = Chcete se odpojit od tohoto serveru a připojit se k "{serverName}"?
+
+assetEditor.assetBrowser.searchAssetsPlaceholder = Vyhledat assety
+assetEditor.assetBrowser.findAsset = Najít aktivní
+assetEditor.assetBrowser.delete = Odstranit
+assetEditor.assetBrowser.rename = Přejmenovat
+assetEditor.assetBrowser.duplicate = Duplikovat
+assetEditor.assetBrowser.findInFolder = Vyhledat ve složce
+assetEditor.assetBrowser.copyPath = Kopírovat cestu
+assetEditor.assetBrowser.showInFinder = Zobrazit ve Finderu
+assetEditor.assetBrowser.showInExplorer = Zobrazit v Průzkumníkovi
+assetEditor.assetBrowser.createInFolder = Vytvořit {assetType} ve složce
+assetEditor.assetBrowser.createAssetInFolder = Vytvořit asset ve složce
+assetEditor.assetBrowser.createFolder = Vytvořit složku
+assetEditor.assetBrowser.create = Vytvořit {assetType}
+assetEditor.assetBrowser.tabs.cosmetics = Kosmetika
+assetEditor.assetBrowser.tabs.server = Server
+assetEditor.assetBrowser.tabs.common = Obecné
+assetEditor.assetBrowser.tooltips.collapseAll = Sbalit všechny adresáře
+assetEditor.assetBrowser.tooltips.createNewAsset = Vytvořit nový asset
+assetEditor.assetBrowser.tooltips.filter = Filtrovat
+assetEditor.assetBrowser.export = Exportovat asset
+assetEditor.assetBrowser.exportAndDiscard = Exportovat asset a zahodit
+assetEditor.assetBrowser.discard = Zahodit změny
+
+assetEditor.changeConfirmationModal.title = Vyžadováno potvrzení
+assetEditor.changeConfirmationModal.text = Změna této hodnoty způsobí odstranění některých existujících vlastností.
+
+assetEditor.assetReferenceOrInlineEditor.useExisting = Použít existující
+assetEditor.assetReferenceOrInlineEditor.createEmbedded = Vytvořit vložené
+assetEditor.assetReferenceOrInlineEditor.reference = Odkaz na {assetType}
+
+assetEditor.assetDropdownEditor.openAssetTooltip = Otevřít asset v nové kartě
+assetEditor.assetDropdownEditor.createAssetTooltip = Vytvořit a přiřadit nový {assetType}
+
+assetEditor.listEditor.empty = Tento seznam je prázdný.
+assetEditor.listEditor.header = {count} položek v seznamu
+assetEditor.mapEditor.empty = Tato mapa je prázdná.
+assetEditor.mapEditor.header = {count} položek na mapě
+
+assetEditor.jsonObjectEditor.json = JSON
+assetEditor.jsonObjectEditor.jsonParseError = JSON: Chyba analýzy
+
+assetEditor.changelogModal.newVersion = Nový
+assetEditor.changelogModal.title = Co je nového?
+
+assetEditor.backends.local = Verze: lokální assety
+assetEditor.backends.server = Úprava: Assety serveru
+assetEditor.backends.tooltip = Klikněte pro otevření složky exportu.
+
+assetEditor.mode.editor = Editor
+assetEditor.mode.source = Zdroj
+
+assetEditor.editor.searchProperties = Vyhledat vlastnosti
+
+assetEditor.property.title = Vlastnost «{name}»
+assetEditor.property.remove = Odstranit
+assetEditor.property.renameKey = Přejmenovat klíč
+assetEditor.property.moveDown = Posunout dolů
+assetEditor.property.moveUp = Posunout nahoru
+assetEditor.property.createEmbeddedAsset = Převést na vložený asset
+assetEditor.property.createDedicatedAsset = Převést na vyhrazený asset
+assetEditor.property.collapseAllEntries = Sbalit všechny položky
+assetEditor.property.uncollapseAllEntries = Rozbalit všechny položky
+assetEditor.property.openAssetInNewTab = Otevřít asset v nové kartě
+assetEditor.property.copyAndReferenceAsset = Kopírovat a odkázat na asset
+assetEditor.property.createAndReferenceAsset = Vytvořit asset a odkázat na něj
+assetEditor.property.insertSiblingBefore = Vložit sourozence před
+assetEditor.property.insertSiblingAfter = Vložit sourozence po
+assetEditor.property.list = Seznam
+assetEditor.property.map = Mapa
+assetEditor.property.copyValue = Kopírovat hodnotu
+assetEditor.property.pasteValue = Vložit hodnotu
+assetEditor.property.map.insertLabel = Vložit
+assetEditor.property.errors.keyAlreadyExists = Tento klíč je již používán.
+
+assetEditor.property.tooltip.arrayItem = Index: {index}
+assetEditor.property.tooltip.mapItem = Klíč: {key}
+assetEditor.property.tooltip.inheritedProperty = Zděděno z {asset} => {value}
+assetEditor.property.tooltip.listEntries = {count} položek v seznamu
+assetEditor.property.tooltip.objectEntries = {count} položek objektů
+
+assetEditor.configEditor.button.collapseAll = Sbalit vše
+assetEditor.configEditor.button.expandAll = Rozbalit vše
+assetEditor.configEditor.button.showDefinedProperties = Přepnout: zobrazit pouze definované vlastnosti
+assetEditor.configEditor.button.quickInspect = Rychlá kontrola
+
+assetEditor.sourceEditor.apply = Použít změny
+assetEditor.sourceEditor.discard = Zahodit změny
+assetEditor.sourceEditor.unsavedChangesModal.title = Neuložené změny
+assetEditor.sourceEditor.unsavedChangesModal.text = V editoru kódu jsou neuložené změny. Opravdu chcete pokračovat?
+assetEditor.sourceEditor.unsavedChangesModal.discardChanges = Zahodit změny
+
+assetEditor.assetSelector.findAsset = Hledat aktivní...
+
+assetEditor.fileSelector.placeholder = Vyberte soubor
+assetEditor.fileSelector.filesSelected = {count} vybraných souborů
+assetEditor.fileSelector.findFile = Vyhledat soubor...
+assetEditor.fileSelector.createDirectory = Vytvořit složku
+assetEditor.fileSelector.newDirectoryNamePlaceholder = Název nové složky...
+
+assetEditor.timelineEditor.insertAt = Vložit hodnotu do {hour}
+assetEditor.timelineEditor.updateAt = Čas: {hour}\n\
+\n\
+Klikněte pravým tlačítkem pro odstranění
+
+assetEditor.modal.applyChangesLocally = Použít změnu také lokálně
+
+assetEditor.deleteAssetModal.title = Odstranit asset?
+assetEditor.deleteAssetModal.text = Opravdu chcete odstranit "{assetId}"?
+assetEditor.deleteAssetModal.confirmButton = Odstranit
+
+assetEditor.deleteDirectoryModal.title = Odstranit složku?
+assetEditor.deleteDirectoryModal.text = Opravdu chcete odstranit "{path}"?
+assetEditor.deleteDirectoryModal.confirmButton = Odstranit
+
+assetEditor.keyModal.renameTitle = Přejmenovat klíč
+assetEditor.keyModal.insertTitle = Vložit klíč
+assetEditor.keyModal.renameButton = Přejmenovat
+assetEditor.keyModal.insertButton = Vložit
+assetEditor.keyModal.errors.existingKey = Položka s tímto klíčem již existuje!
+assetEditor.keyModal.errors.invalidProperty = Neplatná vlastnost
+assetEditor.keyModal.errors.fieldEmpty = Zadejte nové heslo!
+
+assetEditor.iconExporterModal.export = Uložit ikonu
+assetEditor.iconExporterModal.reset = Resetovat na výchozí hodnoty
+assetEditor.iconExporterModal.previewZoom = Náhled zoomu
+assetEditor.iconExporterModal.rotationX = Rotace X
+assetEditor.iconExporterModal.rotationY = Rotace Y
+assetEditor.iconExporterModal.rotationZ = Rotace Z
+assetEditor.iconExporterModal.translationX = Pozice X
+assetEditor.iconExporterModal.translationY = Pozice Y
+assetEditor.iconExporterModal.scale = Měřítko
+assetEditor.iconExporterModal.errors.invalidConfig = Tento prvek není správně nakonfigurován pro zobrazení náhledu.
+
+assetEditor.renameModal.titleAsset = Přejmenovat asset
+assetEditor.renameModal.titleFolder = Přejmenovat složku
+assetEditor.renameModal.renameButton = Přejmenovat
+assetEditor.renameModal.newId = Nové ID
+assetEditor.renameModal.newName = Nový název
+assetEditor.renameModal.errors.invalidId = Zadejte prosím platný identifikátor. Identifikátor může obsahovat pouze písmena a číslice a symbol _ pro určité kategorie identifikátorů.
+assetEditor.renameModal.warning = Varování: přejmenování assetu nezmění odkazy na něj v jiných JSON souborech. Tato akce může poškodit jiné assety.
+
+assetEditor.idValidation.empty = Pole identifikátoru nemůže být prázdné.
+assetEditor.idValidation.minLength = Identifikátor musí obsahovat alespoň {count} znaků.
+assetEditor.idValidation.maxLength = Identifikátor nesmí obsahovat více než {count} znaků.
+assetEditor.idValidation.onlyLettersAndDigits = Identifikátor může obsahovat pouze písmena a číslice.
+assetEditor.idValidation.firstUppercase = První písmeno identifikátoru nebo po podtržítku musí být velké.
+assetEditor.idValidation.firstLetter = Prvním znakem identifikátoru nebo po podtržítku musí být písmeno.
+assetEditor.idValidation.underscoreEmpty = Identifikátor nesmí začínat ani končit podtržítkem a po podtržítku nesmí následovat další podtržítko.
+
+assetEditor.createAssetModal.title = Vytvořit nový asset {assetType}
+assetEditor.createAssetModal.assetPack = Balíček assetů
+assetEditor.createAssetModal.assetType = Typ assetu
+assetEditor.createAssetModal.folder = Složka
+assetEditor.createAssetModal.assetId = Unikátní identifikátor assetu
+assetEditor.createAssetModal.assetIdHelp = Povolené znaky: A-Z 0-9 _\
+Příklady: Wood_Ash_Roots, Zone3_Cloudy_Medium, Battleaxe_Swing_Left
+assetEditor.createAssetModal.copyAsset = Kopírovat asset
+assetEditor.createAssetModal.tab.properties = Vlastnosti
+assetEditor.createAssetModal.tab.source = Zdroj
+assetEditor.createAssetModal.createButton = Vytvořit
+assetEditor.createAssetModal.assetPackDropdown.noEntries = Nejprve vytvořte nový balíček assetů.
+assetEditor.createAssetModal.errors.existingId = Asset s tímto identifikátorem již existuje!
+assetEditor.createAssetModal.errors.invalidAssetType = Neplatný typ assetu
+assetEditor.createAssetModal.errors.noAssetPackSelected = Pro vytvoření assetu vyberte balíček assetů.
+
+assetEditor.exportModal.title = Nedávno upravené assety
+assetEditor.exportModal.deselectAllButton = Zrušit výběr všeho
+assetEditor.exportModal.selectAllButton = Vybrat vše
+assetEditor.exportModal.exportButton = Exportovat výběr
+assetEditor.exportModal.launcherAssetsWarning = Nelze exportovat assety při používání assetů launcheru!
+assetEditor.exportModal.discardChangesModal.title = Zahodit změny?
+assetEditor.exportModal.discardChangesModal.text = Zahodit změny z {assetId} ({assetType})
+assetEditor.exportModal.discardChangesModal.confirmButton = Zahodit změny
+assetEditor.exportModal.discardChangesCheckBox = Zahodit změny na serveru po exportu
+assetEditor.exportModal.discardChangesCheckBoxDescription = Pokud je tato možnost aktivní, původní stav vybraných assetů na serveru bude obnoven opětovným odesláním těchto assetů ze složky assetů. To je užitečné, když je práce na určitých assetech dokončena a jsou připraveny k předání do repozitáře, protože tyto soubory budou odstraněny z tohoto seznamu. Pokud server a klient používají stejnou složku assetů (například v režimu pro jednoho hráče), jediné, co tato možnost způsobí, je odstranění těchto položek z výše uvedeného seznamu.
+assetEditor.exportModal.discardButtonTooltip = Zahodit změny
+assetEditor.exportModal.columns.file = Soubor
+assetEditor.exportModal.columns.lastChangeDate = Poslední změna
+assetEditor.exportModal.columns.lastChangeUsername = Od
+assetEditor.exportModal.tooltips.deleted = Asset byl odstraněn.
+assetEditor.exportModal.tooltips.new = Asset byl vytvořen.
+assetEditor.exportModal.tooltips.renamed = Název assetu byl změněn na {oldPath}.
+assetEditor.exportModal.tooltips.changed = Asset byl upraven.
+
+assetEditor.filterModal.title = Filtrovat podle typů assetů
+assetEditor.filterModal.searchPlaceholder = Vyhledat typy assetů
+
+assetEditor.iconMassExportModal.title = Hromadný export ikon prvků
+assetEditor.iconMassExportModal.startButton = Zahájit export
+assetEditor.iconMassExportModal.statusLabel = Stav:
+assetEditor.iconMassExportModal.iconSize = Velikost ikony
+assetEditor.iconMassExportModal.starting = Zahajování...
+assetEditor.iconMassExportModal.status = {completeCount}/{totalCount} – {percentage}% - {failedCount} selhalo - {skippedCount} přeskočeno
+
+assetEditor.errors.invalidAssetsDirectory = Platná složka assetů musí obsahovat složku Server a složku Shared.
+assetEditor.errors.failedToFetchAsset = Nelze načíst asset "{path}".
+assetEditor.errors.failedToFetchParent = Došlo k chybě při načítání základního assetu.
+assetEditor.errors.recursiveParent = Nelze načíst asset, protože některé nadřazené assety se vzájemně odkazují (cyklická závislost).
+assetEditor.errors.errorOccurredFetching = Došlo k chybě při načítání tohoto assetu.
+assetEditor.errors.assetNotFound = Tento asset neexistuje.
+assetEditor.errors.unknownAssetType = Neznámý typ assetu "{assetType}"
+assetEditor.errors.fileFormatNotSupported = Tento formát souboru není podporován.
+assetEditor.errors.invalidJson = Neplatný JSON
+assetEditor.errors.invalidAssetType = Neplatný typ assetu
+assetEditor.errors.missingId = Zadejte prosím identifikátor.
+assetEditor.errors.failedExportErrors = Nelze exportovat assety, protože některé obsahují chyby validace.
+assetEditor.errors.failedToSetupAssetTypes = Nelze nastavit typy assetů.
+assetEditor.errors.failedToLoadAssetFiles = Nepodařilo se načíst soubory assetů.
+assetEditor.errors.failedToLoadCommonAssetFiles = Nelze načíst společné soubory assetů.
+assetEditor.errors.failedToRenameAsset = Nelze přejmenovat asset.
+assetEditor.errors.failedToDeleteAsset = Nepodařilo se odstranit asset.
+assetEditor.errors.failedToCreateAsset = Nelze vytvořit asset.
+assetEditor.errors.assetTypeNotSetupForEditor = Tento typ assetu není nastaven pro úpravu v editoru.
+assetEditor.errors.createDirectoryInvalidPath = Nelze vytvořit složku, protože se nenachází ve složce assetů.
+assetEditor.errors.createDirectoryExists = Nelze vytvořit složku, protože již existuje.
+assetEditor.errors.createDirectoryOther = Nelze vytvořit složku.
+assetEditor.errors.renameDirectoryInvalidPath = Nelze přejmenovat složku, protože se nenachází ve složce assetů.
+assetEditor.errors.renameDirectoryExists = Nelze přejmenovat složku, protože již existuje složka se stejným názvem.
+assetEditor.errors.renameDirectoryMissing = Nelze přejmenovat složku, protože složka, která má být přejmenována, neexistuje.
+assetEditor.errors.renameDirectoryOther = Nelze přejmenovat složku.
+assetEditor.errors.deleteDirectoryInvalidPath = Nelze odstranit složku, protože se nenachází ve složce assetů.
+assetEditor.errors.deleteDirectoryMissing = Nelze odstranit složku, protože neexistuje.
+assetEditor.errors.deleteDirectoryOther = Nelze odstranit složku.
+assetEditor.errors.directoryInvalidCharacters = Názvy složek nesmí obsahovat znaky jako \ nebo /.
+assetEditor.errors.exportInProgress = Export stále probíhá.
+assetEditor.errors.cannotRevealUnexportedAsset = Soubor nelze zobrazit v prohlížeči, protože nebyl ještě exportován.
+assetEditor.errors.cannotPasteWrongType = Nelze vložit hodnotu: neplatný typ.
+
+assetEditor.messages.assetExport.success = Assety {count} byly uloženy.
+assetEditor.messages.assetExport.none = Žádné assety nebyly uloženy.
+assetEditor.messages.assetExport.errors = Nelze uložit assety, protože některé obsahují chyby.
+assetEditor.messages.assetExport.failedSaving = assety nebyly uloženy.
+assetEditor.messages.undoStackEmpty = Není nic k vrácení.
+assetEditor.messages.redoStackEmpty = Není nic k opakování.
+assetEditor.messages.directoryDeleted = Složka byla úspěšně odstraněna.
+assetEditor.messages.directoryCreated = Složka byla úspěšně vytvořena.
+
+assetEditor.unexportedAssetsModal.quitTitle = Odejít z klienta?
+assetEditor.unexportedAssetsModal.continueTitle = Pokračovat?
+assetEditor.unexportedAssetsModal.text = V editoru assetů jsou neexportované změny.
+assetEditor.unexportedAssetsModal.quitButton = přesto odejít
+assetEditor.unexportedAssetsModal.continueButton = Pokračovat přesto
+
+assetEditor.diagnosticsTooltip.errors = Chyby:
+assetEditor.diagnosticsTooltip.warnings = Varování:
+assetEditor.diagnosticsTooltip.hasChildErrors = Některé podřízené vlastnosti obsahují chyby.
+assetEditor.diagnosticsTooltip.hasChildWarnings = Některé sekundární vlastnosti obsahují varování.
+
+assetEditor.configEditor.errors.failedToLoad = Nelze načíst editor. Více detailů najdete v logu.
+assetEditor.configEditor.showAllProperties = Zobrazit všechny vlastnosti
+
+assetEditor.tabs.popup.close = Zavřít
+assetEditor.tabs.popup.closeAll = Zavřít vše
+assetEditor.tabs.popup.copyId = Kopírovat ID
+
+assetEditor.weatherDaytimeBar.togglePauseTime = Pauza/ pokračování času
+assetEditor.weatherDaytimeBar.previousDay = Nastavit jako předchozí den
+assetEditor.weatherDaytimeBar.nextDay = Přizpůsobit se následujícímu dni
+assetEditor.weatherDaytimeBar.lockTimeAndWeather = Klikněte pro přepnutí mezi zachováním aktuálního času a počasí i po opuštění editoru assetů.
+assetEditor.weatherDaytimeBar.currentDay = Den {day, number}
+
+assetEditor.initializeButton.inactive = Inicializovat objekt
+assetEditor.initializeButton.active = Odstranit objekt
+
+assetEditor.fileSaveStatus.Saved = Změny uloženy
+assetEditor.fileSaveStatus.Saving = Ukládání změn...
+assetEditor.fileSaveStatus.Unsaved = Neuložené změny
+
+assetEditor.options.title = Možnosti
+assetEditor.options.disconnect = Odpojit se od serveru
+assetEditor.options.exportItemIcons = Exportovat ikony prvků
+assetEditor.options.settings = Nastavení
+
+assetEditor.tabs.tooltip = {type} Aktivní\n\
+\n\
+Balíček: {pack}
+
+assetEditor.packModal.title.edit = Upravit balíček
+assetEditor.packModal.title.add = Přidat balíček
+assetEditor.packModal.readOnlyMessage = Tento balíček je pouze pro čtení a nelze jej upravovat.
+assetEditor.packModal.editModeNote = Změna názvu nebo skupiny balíčku assetů začne platit až po restartu serveru.
+assetEditor.packModal.identifierChangeWarning = VAROVÁNÍ: Měníte identifikátor balíčku (název nebo skupinu). Tato změna začne platit okamžitě, ale může způsobit neočekávané chování za běhu. Assety odkazující na tento balíček mohou přestat fungovat správně až do restartu serveru.
+assetEditor.packModal.field.name = Jméno
+assetEditor.packModal.field.name.placeholder = Název balíčku (unikátní identifikátor balíčku)
+assetEditor.packModal.field.group = Skupina
+assetEditor.packModal.field.group.placeholder = Skupina balení (například vaše jméno a příjmení)
+assetEditor.packModal.field.version = Verze
+assetEditor.packModal.field.version.placeholder = 1.0.0 (semver)
+assetEditor.packModal.field.website = Webová stránka
+assetEditor.packModal.field.website.placeholder = URL adresa stránky (volitelně)
+assetEditor.packModal.field.description = Popis
+assetEditor.packModal.field.description.placeholder = Popis balíčku (volitelně)
+assetEditor.packModal.field.authors = Autoři
+assetEditor.packModal.authors.add = + Přidat
+assetEditor.packModal.authors.empty = Nebyli přidáni žádní autoři.
+assetEditor.packModal.authors.entry = Autor
+assetEditor.packModal.authors.name.placeholder = Jméno
+assetEditor.packModal.authors.email.placeholder = E-mail (volitelně)
+assetEditor.packModal.authors.url.placeholder = URL adresa (volitelně)
+assetEditor.packModal.button.save = Uložit
+assetEditor.packModal.errors.nameRequired = Název balíčku je vyžadován.
+assetEditor.packModal.errors.groupRequired = Skupina balení je vyžadována.
+assetEditor.packModal.errors.versionRequired = verze je vyžadována
+assetEditor.packModal.errors.versionInvalid = Neplatný formát verze. Použijte sémantické verzování (např. 1.0.0, 2.1.3-beta, 1.0.0+build123).
+
+assetEditor.readOnlyAssetBar.message = Tento asset je pouze pro čtení a nelze jej upravovat, protože balíček assetů je pouze pro čtení.
+assetEditor.readOnlyAssetBar.overrideButton = Zrušit aktivní
+assetEditor.readOnlyAssetBar.tooltip = Tento prostředek nelze upravit, protože balíček prostředků, ve kterém se nachází, je pouze pro čtení.
+\n\
+Komprimované balíčky zdrojů nelze upravovat. Upravovat lze pouze balíčky zdrojů založené na adresářích.\n\
+\n\
+Zdroje lze nahradit pomocí vlastního balíčku zdrojů.
+
+assetEditor.inheritanceWarning.message = Varování: tento asset obsahuje nadřazený prvek a dědičnost není ještě podporována v editoru vlastností.
+assetEditor.inheritanceWarning.tooltip = Tento zdroj zdědí vlastnosti z jiného zdroje (uvedeno v „Nadřazené vlastnosti“).\n\n\
+Editor vlastností v současné době plně nepodporuje dědičnost a zobrazuje pouze vlastnosti definované v tomto zdroji. \n\n\
+Vlastnosti využívající hodnoty z nadřazeného zdroje jsou označeny *.
+
+assetEditor.managePacksMenu.editPack = Upravit balíček
+assetEditor.managePacksMenu.addPack = Přidat balíček
+assetEditor.managePacksMenu.removePack = Odstranit balíček
+
+assetEditor.confirmationModal.typeToConfirm = Zadejte „{value}” pro potvrzení:
+
+assetEditor.deletePackModal.title = Odstranit balíček assetů?
+assetEditor.deletePackModal.text = Opravdu chcete odstranit balíček zdrojů „{packId}”?\n\
+\n\
+VAROVÁNÍ: Jedná se o NEBEZPEČNOU operaci!\n\
+\n\
+• Všechny zdroje v tomto balíčku budou trvale odstraněny.\n\
+• Odstranění balíčku prostředků během provádění může vést k neočekávanému chování, selhání nebo poškození dat.\n\
+• Veškeré odkazy na zdroje v tomto balíčku z jiných balíčků budou poškozeny.\n\
+• Tento úkon nelze vrátit zpět.\n\
+\n\
+Pokračujte pouze v případě, že plně rozumíte důsledkům.
+assetEditor.deletePackModal.confirmButton = Odstranit balíček
+
+assetEditor.newAssetButton.readOnlyPackTooltip = Nelze vytvořit nové assety, protože vybraný balíček assetů je pouze pro čtení.
+# === auth ===
+auth.sessionExpired.title = Relace vypršela
+auth.sessionExpired.message = Nelze aktualizovat vaši relaci. Byl jste přepnut do offline režimu. \n\nMůžete pokračovat ve hře, ale nebudete moci připojit se k serverům ani začít nové světy, dokud hru nerestartujete.
+# === bench ===
+bench.Furniture_Bench = Nábytkový pracovní stůl
+bench.Builders = Stavební pracovní stůl
+bench.Armor_Bench = Zbrojní pracovní stůl
+bench.Weapon_Bench = Kovářské kladivo
+bench.Workbench = Pracovní stůl
+bench.Farmingbench = Farmářský pracovní stůl
+bench.Farmingbench_old = Farmářský pracovní stůl (starý)
+bench.Cookingbench = Kuchařský sporák
+bench.Loombench = Tkalcovský stav
+bench.Armory = Zbrojnice
+bench.Fieldcraft = Terénní techniky
+bench.Arcanebench = Arkanistický pracovní stůl
+bench.Alchemybench = Alchymistický pracovní stůl
+bench.Template = Šablona
+bench.ArmorBench = Zbrojní pracovní stůl
+bench.Architectsbench = Architektický pracovní stůl
+bench.Fieldcraft_Old = Terénní techniky (staré)
+
+# === benchCategories ===
+benchCategories.Furniture_Beds = Postele
+benchCategories.Furniture_Misc = Různé
+benchCategories.Furniture_Gothic = Gotika
+benchCategories.Furniture_Lighting = Osvětlení
+benchCategories.Furniture_Pottery = Keramika
+benchCategories.Furniture_Textiles = Textilie
+benchCategories.Furniture_Storage = Úložiště
+benchCategories.Furniture_Statues = Sochy
+benchCategories.Furniture_Seasonal = Sezónní
+benchCategories.Stairs = Schody
+benchCategories.Ornate = Ozdobný
+benchCategories.Sign = Značka
+benchCategories.Roof = Střecha
+benchCategories.Decorative = Dekorativní
+benchCategories.Wardrobe = Šatník
+benchCategories.Wall = Stěna
+benchCategories.Pillar = Sloup
+benchCategories.Shelf = Police
+benchCategories.Bricks = Cihly
+benchCategories.Trapdoor = Poklop
+benchCategories.Gate = Brána
+benchCategories.Smooth = Hladký
+benchCategories.Structural-Rock = Strukturální skála
+benchCategories.Platform = Platforma
+benchCategories.Window = Okno
+benchCategories.Beam = Trám
+benchCategories.SmoothHalfSlab = Hladká poloviční deska
+benchCategories.HalfSlab = Poloviční deska
+benchCategories.Table = Stůl
+benchCategories.Stool = Stolice
+benchCategories.Chair = Křeslo
+benchCategories.Door = Dveře
+benchCategories.Ladder = Žebřík
+benchCategories.Armor_Hands = Ruce
+benchCategories.Armor_Legs = Nohy
+benchCategories.Armor_Head = Hlava
+benchCategories.Armor_Chest = Hrudník
+benchCategories.Weapon_Shield = Štít
+benchCategories.Weapon_Daggers = Dýky
+benchCategories.Weapon_Sword = Meč
+benchCategories.Weapon_Bow = Luk
+benchCategories.Weapon_Club = Kyj
+benchCategories.Weapon_Axe = Sekera
+benchCategories.Weapon_Mace = Palice
+benchCategories.Weapon_Battleaxe = Bojová sekera
+benchCategories.Weapon_Longsword = Dlouhý meč
+benchCategories.Workbench_Tools = Nástroje
+benchCategories.Workbench_Weapons = Zbraně
+benchCategories.Workbench_Tinkering = Opravy
+benchCategories.Workbench_Crafting = Výroba
+benchCategories.Workbench_Farming = Zemědělství
+benchCategories.Seeds = Semena
+benchCategories.Other = Jiné
+benchCategories.Saplings = Sazenice
+benchCategories.All = Vše
+benchCategories.Prepared = Připravené
+benchCategories.Baked = Pečené
+benchCategories.Weapons = Zbraně
+benchCategories.Tools = Nástroje
+benchCategories.Arcane_Misc = Různé
+benchCategories.Arcane_Portals = Portály
+benchCategories.Alchemy_Potions = Lektvary
+benchCategories.Alchemy_Bombs = Bomby
+benchCategories.Template = Šablona
+# === builderTools ===
+builderTools.name = Nástroje pro stavitele
+builderTools.selectTool = Vybrat nástroj
+builderTools.useTool = Použít nástroj
+builderTools.canNotUse = Stavební nástroje nelze používat mimo kreativního režimu!
+
+builderTools.selectATool = Klikněte levým tlačítkem myši na stavební nástroj v inventáři nebo na liště zkratek pro jeho konfiguraci.
+builderTools.noToolSettings = Tento nástroj nevyžaduje konfiguraci.
+
+builderTools.favorites.nameTitle = Oblíbený název nástroje
+builderTools.favorites.nameDescription = Zadejte název tohoto oblíbeného nástroje.
+
+builderTools.settings.ToolReachDistance.name = Dosah nástroje
+builderTools.settings.ToolReachDistance.description = Určuje maximální (nebo zamčenou) vzdálenost pro použití nástrojů.
+builderTools.settings.ToolDelayMin.name = Minimální zpoždění nástroje
+builderTools.settings.ToolDelayMin.description = Určuje minimální zpoždění (v ms) povolené mezi každým použitím nástroje.
+builderTools.settings.EnableBrushShapeRendering.name = Renderování tvaru štětce
+builderTools.settings.EnableBrushShapeRendering.description = Přepíná renderování štětce mezi blokovou formou a standardní kostrou sítě.
+builderTools.settings.BrushOpacity.name = Neprůhlednost štětce
+builderTools.settings.BrushOpacity.description = Ovládá neprůhlednost renderovaných nástrojů štětce.
+builderTools.settings.SelectionOpacity.name = Neprůhlednost výběru
+builderTools.settings.SelectionOpacity.description = Ovládá neprůhlednost renderovaného nástroje výběru.
+builderTools.settings.SelectionPanelOpacity.name = Neprůhlednost panelu výběru
+builderTools.settings.SelectionPanelOpacity.description = Ovládá neprůhlednost panelů nástrojů výběru, které lze přetahovat.
+builderTools.settings.FlightInertia.name = Setrvačnost letu
+builderTools.settings.FlightInertia.description = Přidává zrychlení a postupné zpomalení k kreativnímu letu (0 = okamžité zastavení, 100 = maximální drift).
+builderTools.settings.FlightMode.name = Režim letu
+builderTools.settings.FlightMode.description = Vyberte mezi setrváním ve vzduchu nebo létáním směrem ke kameře.
+builderTools.settings.DisplayLegend.name = Legenda obrazovky
+builderTools.settings.DisplayLegend.description = Zobrazit nebo skrýt panel legendy stavebních nástrojů s tipy na ovládání.
+builderTools.settings.NoClip.name = Bez klipu
+builderTools.settings.NoClip.description = Vypíná detekci kolizí během letu, umožňuje létat přes bloky.
+builderTools.settings.AirPlacement.name = Umístění vzduchu
+builderTools.settings.AirPlacement.description = Umožňuje umisťovat bloky ve vzduchu na dálku bez nutnosti podpory.
+builderTools.settings.AllowNPCDetection.name = Povolit detekci NPC
+builderTools.settings.AllowNPCDetection.description = Pokud je povoleno, NPC vás mohou detekovat a reagovat, když jste v kreativním režimu.
+builderTools.settings.RespondToHit.name = Reagovat na zásah
+builderTools.settings.RespondToHit.description = Pokud je povoleno, můžete dostat zpětný ráz a další efekty zásahu, přičemž zůstanete neporazitelní v kreativním režimu.
+builderTools.settings.BrushShapeRendering.name = Renderování bloku štětce
+builderTools.settings.BrushShapeRendering.description = Přepíná náhled štětce mezi kostrovým a blokovým stylem.
+builderTools.settings.FlightSpeedMultiplier.description = Upravte rychlost letu a pohybu
+builderTools.settings.BrushSoundsEnabled.description = Zapněte nebo vypněte zvukové efekty při používání nástrojů štětce.
+builderTools.settings.BrushSoundVolume.description = Upravte hlasitost zvukových efektů nástroje Štětec
+builderTools.settings.HideHud.description = Skrýt všechny prvky HUD
+builderTools.settings.HideHotbar.description = Skrýt lištu rychlého přístupu v kreativním režimu
+builderTools.settings.HideCompass.description = Skrýt kompas v kreativním režimu
+builderTools.settings.HideNotifications.description = Skrýt oznámení v kreativním režimu
+builderTools.settings.HideChat.description = Skrýt okno chatu v kreativním režimu.
+builderTools.settings.HideHeldItem.description = Skrýt předmět v ruce v kreativním režimu.
+builderTools.settings.ShowEntityMarkers.description = Zobrazit značky entit v kreativním režimu
+builderTools.settings.Fullbright.description = Zapíná režim plného jasu, takže všechny bloky jsou plně osvětleny bez ohledu na úroveň osvětlení.
+
+builderTools.panel.settings = Nastavení
+builderTools.panel.brushes = Štětce
+builderTools.panel.brushSettings = Štětce
+builderTools.panel.generalSettings = Obecné nastavení
+builderTools.panel.maskSettings = Nastavení masky
+builderTools.panel.quickSettings = Nastavení
+builderTools.quickSettings.title = Rychlé nastavení kreativního režimu
+builderTools.panel.clearSelection = Vymazat výběr
+builderTools.panel.enableEmptyFilter = Zapnout filtr „Prázdný”.
+builderTools.panel.invertEntireMask = Invertovat celou masku
+builderTools.panel.useCustomMaskCommandEntry = Použít vstup příkazu vlastní masky
+
+builderTools.replace.materialsToReplace = [TMP] Materiály k výměně:
+builderTools.replace.replaceWith = [TMP] Nahradit:
+
+builderTools.legend.title = Legenda
+builderTools.legend.pickMaterial = Vybrat materiál
+builderTools.legend.setMask = Nastavit jako masku
+builderTools.legend.addMask = Přidat do masky
+builderTools.legend.changeHeight = Změnit výšku tvaru
+builderTools.legend.changeWidth = Změnit šířku tvaru
+builderTools.legend.favoriteMaterials = Oblíbené materiály
+builderTools.legend.selectedMaterial = Vybraný materiál
+builderTools.legend.shiftFasterChange = Podržte Shift pro rychlejší změny.
+builderTools.legend.undo = Zpět
+builderTools.legend.redo = Znovu
+builderTools.legend.addRemoveFavorite = Přidat/Odstranit oblíbený materiál
+builderTools.legend.alt = Vše +
+builderTools.legend.shiftalt = Shift + Alt +
+builderTools.legend.shift = Shift +
+
+builderTools.legend.PaintBrush.Page1.Title = Základní štětce
+builderTools.legend.PaintBrush.Page1.Description = Nástroj Štětec umožňuje umisťovat a odstraňovat bloky různých tvarů, velikostí a materiálů.
+builderTools.legend.PaintBrush.Page1.DestroyBlocks = Zničit bloky, na které míříte.
+builderTools.legend.PaintBrush.Page1.PlaceBlocks = Umístit bloky kamkoli, v závislosti na vybraném materiálu.
+builderTools.legend.PaintBrush.Page1.SelectTargetMaterial = Vybrat konkrétní materiál
+builderTools.legend.PaintBrush.Page1.AddTargetMaterial = Přidat konkrétní materiál jako multimateriál
+builderTools.legend.PaintBrush.Page1.UndoLastBrush = Zpět poslední akci štětce
+builderTools.legend.PaintBrush.Page1.RedoLastUndo = Znovu poslední vrácenou akci
+builderTools.legend.PaintBrush.Page1.EditInventoryProperties = Upravit materiály, velikost, tvar a další vlastnosti v inventáři.
+builderTools.legend.PaintBrush.Page1.AirPlacementTitle = Umístění vzduchu
+builderTools.legend.PaintBrush.Page1.AirPlacementHotkey = Přepnout režim výběru vzdušného umístění
+builderTools.legend.PaintBrush.Page1.AirPlacementDistanceChange = Změnit vzdálenost umístění vzduchu
+builderTools.legend.PaintBrush.Page2.Title = Uzamčení osy a maskování
+builderTools.legend.PaintBrush.Page2.AxisLock = Uzamčení osy
+builderTools.legend.PaintBrush.Page2.AxisLockDescription = Umožňuje připojit štětec k ploché, pohyblivé a otočné povrchu. Níže uvedené klávesové zkratky umožňují zobrazit, upravit a opustit režim povrchu.
+builderTools.legend.PaintBrush.Page2.ShowSurfaceMoveTool = Zobrazit nástroj Přesunout povrch
+builderTools.legend.PaintBrush.Page2.ShowSurfaceRotationTool = Zobrazit nástroj Otočit povrch
+builderTools.legend.PaintBrush.Page2.UseBrush = Použít štětec
+builderTools.legend.PaintBrush.Page2.ExitAxisLockMode = Opustit režim uzamčení osy
+builderTools.legend.PaintBrush.Page2.BlockMasking = Maskování bloků
+builderTools.legend.PaintBrush.Page2.BlockMaskingDescription = Umožňuje nastavit materiály štětce, které omezují změny na bloky odpovídající těmto materiálům.
+builderTools.legend.PaintBrush.Page2.BrushMenuMaskingTab = Karta Maska v menu Štětec
+builderTools.legend.PaintBrush.Page2.MaskConfigDescription = Klikněte na ikonu tužky v pravém horním rogu pro přechod na panel „Nastavení masky”. Tam můžete vytvářet složitější masky pomocí předmětů z inventáře. Najetím kurzoru na podmínky v panelu UI získáte více informací.
+builderTools.legend.PaintBrush.Page3.Title = Programovatelné štětce / umístění vzduchu
+builderTools.legend.PaintBrush.Page3.Description = Programovatelné štětce\n\
+Můžete vytvářet vlastní logiku umisťování bloků pomocí příkazů a assetů, jako je „Říční štětec”, „Horský štětec” a jakýkoli jiný štětec, který si představíte!
+builderTools.legend.PaintBrush.Page3.CreateBrushesDescription = Chcete-li vytvořit vlastní štětce, prohlédněte si příklady v adresáři assetů Assets/Macro Commands/Brushes/. Můžete použít příkaz /help ve hře, abyste se dozvěděli více o všech dostupných operacích konfigurace štětce. Budete také muset vytvořit položku Paint Brush; Příklady těchto položek najdete v adresáři Assets/Server/Item/Items/Editor Tool/Scripted Brushes/.
+builderTools.legend.PaintBrush.Page3.TestingBrushesTitle = Testování vývoje štětce
+builderTools.legend.PaintBrush.Page3.TestingBrushesDescription = Použijte „/sb load” pro otevření UI a prohlížení všech dostupných skriptovaných štětců, nebo „/sb load <name>” pro přímé načtení konkrétního štětce. To umožňuje testovat štětce bez nutnosti vytváření položky. Použijte „/sb clear” pro vypnutí této funkce, až skončíte.
+
+builderTools.legend.LineBrush.Page1.Title = Čárový štětec
+builderTools.legend.LineBrush.Page1.Description = Umožňuje stavět jednoduché linie z bloků.
+builderTools.legend.LineBrush.Page1.StartOrAddPoint = Zahájit nebo přidat bod do linie
+builderTools.legend.LineBrush.Page1.CancelLine = Zrušit linii
+builderTools.legend.LineBrush.Page1.SnapToAngles = Stiskněte a podržte pro zapnutí přichytávání pod různými úhly 45°.
+builderTools.legend.LineBrush.Page1.EditInventoryProperties = Upravit materiály, velikost a další vlastnosti z inventáře.
+
+builderTools.legend.MachinimaTool.Page1.Title = Úvod
+builderTools.legend.MachinimaTool.Page1.Description = Vytvářejte animace klíčových snímků pomocí herců, kamer, částic, zvuků a dalšího! Ideální pro filmové přestávky a herní scény.
+builderTools.legend.MachinimaTool.Page1.OpensMenu = Otevřít UI editoru Machinima
+builderTools.legend.MachinimaTool.Page1.BaseCommand = Základní příkaz pro všechny operace Machinima
+builderTools.legend.MachinimaTool.Page1.Scenes = Scény\n\
+Scéna je kontejner pro vaši machinimu. Uchovává všechny herce, klíčové snímky a nastavení.
+builderTools.legend.MachinimaTool.Page1.CreatingFirstScene = Vytvoření první scény\n\
+
+1. Najděte dobré místo pro svou machinimu\n\
+2. Otevřít nabídku Machinima\n\
+3. Klikněte na ikonu + pro vytvoření nové scény\n\
+4. Přidejte svého prvního herce!
+builderTools.legend.MachinimaTool.Page1.Actors = Akréři\n\
+Herec je objekt, který lze animovat pomocí klíčových snímků. Na další stránce se seznámíte s typy herců.
+builderTools.legend.MachinimaTool.Page1.AddingCameraActor = Přidávání kamer\n\
+1. Postavte se na místo, kam chcete umístit kameru.\n\
+2. Otevřít nabídku Machinima\n\
+3. Klikněte na ikonu + pod seznamem scén\n\
+4. Z rozbalovacího menu vyberte „Kamera“\n\
+5. Nyní můžete kliknout na kameru, abyste změnili její polohu, a stisknout klávesu C, abyste přepnuli zobrazení kamery!
+
+builderTools.legend.MachinimaTool.Page2.Title = Typy herců
+builderTools.legend.MachinimaTool.Page2.Description = Různé typy herců hrají různé role ve vaší machinimě. Všechny jsou animovanými objekty, které umožňují kontrolovat polohu, rotaci a další hodnoty. Herci se přidávají prostřednictvím menu Machinima.
+builderTools.legend.MachinimaTool.Page2.CameraHeader = Kamera
+builderTools.legend.MachinimaTool.Page2.CameraDesc = Umožňuje pohyb kamery po trajektoriích a animaci různých nastavení, jako je zorné pole (FOV) a rychlost.
+builderTools.legend.MachinimaTool.Page2.EntityHeader = Entita
+builderTools.legend.MachinimaTool.Page2.EntityDesc = Animované postavy s modely. Podporuje rotaci těla/hlavy a animační události.
+builderTools.legend.MachinimaTool.Page2.PlayerHeader = Hráč
+builderTools.legend.MachinimaTool.Page2.PlayerDesc = Podobně jako Entita, odkazuje na lokálního hráče.
+builderTools.legend.MachinimaTool.Page2.ReferenceHeader = Reference
+builderTools.legend.MachinimaTool.Page2.ReferenceDesc = Neviditelné orientační body. Užitečné pro stanovení cílů a referenčních pozic. Umožňují nastavit cíle kamery tak, aby následovaly body.
+builderTools.legend.MachinimaTool.Page2.ItemHeader = Položka
+builderTools.legend.MachinimaTool.Page2.ItemDesc = Zobrazuje prvky světa. Lze jej umisťovat a animovat.
+builderTools.legend.MachinimaTool.Page2.AddActorCommand = Příkaz: .mach actor add [typ] [název]\n\
+Typy: kamera, entita, hráč, reference, položka
+
+builderTools.legend.MachinimaTool.Page3.Title = Ovládání přehrávání
+builderTools.legend.MachinimaTool.Page3.Description = Ovládací prvky přehrávání umožňují náhled scény prostřednictvím animace všech herců podél jejich cest klíčových snímků. Použijte je pro posouvání času, skákání mezi klíčovými snímky a testování animací. Každý snímek aktualizuje všechny herce podél jejich cest klíčových snímků, spouštějíc animace.
+builderTools.legend.MachinimaTool.Page3.TogglePause = Přepnout přehrávání/pauza
+builderTools.legend.MachinimaTool.Page3.ContinuousPlayback = Přepnout kontinuální přehrávání (smyčky)
+builderTools.legend.MachinimaTool.Page3.AutoRestart = Aktivovat automatické restartování po dokončení scény
+builderTools.legend.MachinimaTool.Page3.RestartScene = Restartovat scénu od začátku
+builderTools.legend.MachinimaTool.Page3.EndScene = Přejít na poslední snímek
+builderTools.legend.MachinimaTool.Page3.NavigationTitle = Navigace po snímcích:
+builderTools.legend.MachinimaTool.Page3.FrameScrub = Posouvat snímky (stiskněte a podržte pro kontinuální přehrávání)
+builderTools.legend.MachinimaTool.Page3.JumpKeyframe = Přejít na předchozí/další klíčový snímek
+builderTools.legend.MachinimaTool.Page3.SpeedModifiers = Podržte SHIFT pro zdvojnásobení rychlosti a ALT pro snížení o polovinu.
+
+builderTools.legend.MachinimaTool.Page4.Title = Úprava klíčových snímků
+builderTools.legend.MachinimaTool.Page4.Description = Klíčové snímky definují polohu, rotaci a konfiguraci herce v určitých časech. Systém interpoluje klíčové snímky pro vytvoření plynulých animačních cest. Přidejte klíčové snímky pro vytvoření pohybu a upravte je pro úpravu času a polohy.
+builderTools.legend.MachinimaTool.Page4.AddKeyframe = Přidat nový klíčový snímek na konec cesty herce, prodlužujíc animaci.
+builderTools.legend.MachinimaTool.Page4.AddAtCurrentFrame = Vložit klíčový snímek v aktuální pozici přehrávání.
+builderTools.legend.MachinimaTool.Page4.CopyKeyframe = Kopírovat nastavení z vybraných klíčových snímků pro vložení do jiného herce nebo snímku.
+builderTools.legend.MachinimaTool.Page4.DeleteKeyframe = Odstranit klíčový snímek, na který najíždíte kurzorem.
+builderTools.legend.MachinimaTool.Page4.EditKeyframe = Otevřít gizmo pro úpravu polohy a rotace klíčového snímku.
+builderTools.legend.MachinimaTool.Page4.MoveActor = Změnit polohu celé kariéry herce jako celku.
+builderTools.legend.MachinimaTool.Page4.EditFrameTime = Změnit čas výskytu tohoto klíčového snímku na časové ose.
+builderTools.legend.MachinimaTool.Page4.AdjustFrameTime = Zrychlit nebo zpomalit časování klíčových snímků
+
+builderTools.legend.MachinimaTool.Page5.Title = Interakce myši
+builderTools.legend.MachinimaTool.Page5.Description = Klikněte na uzly klíčových snímků ve světě pro interakci:
+builderTools.legend.MachinimaTool.Page5.SelectKeyframe = Vybrat klíčový snímek (aktivovat režim volného pohybu)
+builderTools.legend.MachinimaTool.Page5.JumpToKeyframe = Nastavit jako aktivní a přejít na snímek
+builderTools.legend.MachinimaTool.Page5.GizmoTitle = Ovládání Gizmo:
+builderTools.legend.MachinimaTool.Page5.TranslationGizmo = Otevřít nástroj překladu (uzamčeno osou)
+builderTools.legend.MachinimaTool.Page5.RotationGizmo = Otevřít rotační gizmo (hlava/tělo)
+builderTools.legend.MachinimaTool.Page5.FreeMoveTitle = Režim volného pohybu:
+builderTools.legend.MachinimaTool.Page5.FreeMoveDescription = Klikněte levým tlačítkem myši pro potvrzení polohy, pravým tlačítkem myši pro zrušení.\n\
+Podržte SHIFT pro přitahování k vzdáleným povrchům.\n\
+Podržte ALT pro ignorování přitahování k povrchům.
+
+builderTools.legend.MachinimaTool.Page6.Title = Režimy výběru
+builderTools.legend.MachinimaTool.Page6.Description = Režimy výběru určují, co se pohybuje při používání transformačních nástrojů. Vyberte vhodný režim podle toho, co chcete změnit.
+builderTools.legend.MachinimaTool.Page6.CycleMode = Přepínání mezi režimy výběru
+builderTools.legend.MachinimaTool.Page6.KeyframeModeTitle = Režim klíčového snímku (výchozí)
+builderTools.legend.MachinimaTool.Page6.KeyframeModeDesc = Pohybuje pouze vybraným klíčovým snímkem. Použijte jej pro přesné úpravy jednotlivých bodů na cestě herce bez ovlivnění ostatních klíčových snímků.
+builderTools.legend.MachinimaTool.Page6.ActorModeTitle = Režim Herce
+builderTools.legend.MachinimaTool.Page6.ActorModeDesc = Pohybuje současně všemi klíčovými snímky vybraného herce. Celá cesta se pohybuje jako celek, zachovávajíc tvar animace.
+builderTools.legend.MachinimaTool.Page6.SceneModeTitle = Režim scény
+builderTools.legend.MachinimaTool.Page6.SceneModeDesc = Pohybuje celým začátkem scény, přesouvajíc všechny herce a jejich trajektorie společně. Užitečné pro přesouvání všech machinim na jiné místo.
+
+builderTools.legend.MachinimaTool.Page7.Title = Obrazovka a původ
+builderTools.legend.MachinimaTool.Page7.DisplayTitle = Přepnout zobrazení:
+builderTools.legend.MachinimaTool.Page7.ToggleDisplay = Přepnout zobrazení překryvu editoru
+builderTools.legend.MachinimaTool.Page7.TogglePathNodes = Přepnout viditelnost uzlu cesty
+builderTools.legend.MachinimaTool.Page7.ToggleCamera = Aktivovat/deaktivovat herce kamery
+builderTools.legend.MachinimaTool.Page7.ToggleFrustum = Přepnout zobrazení oříznuté kamery
+builderTools.legend.MachinimaTool.Page7.OriginTitle = Ovládání původů scény:
+builderTools.legend.MachinimaTool.Page7.GoToOrigin = Teleportovat se na původ scény
+builderTools.legend.MachinimaTool.Page7.SetOrigin = Nastavit původ scény na polohu hráče
+builderTools.legend.MachinimaTool.Page7.OffsetToOrigin = Přesunout celou scénu na polohu hráče.
+
+builderTools.legend.MachinimaTool.Page8.Title = Cesty a křivky
+builderTools.legend.MachinimaTool.Page8.Description = Vyberte způsob interpolace klíčových snímků:
+builderTools.legend.MachinimaTool.Page8.LinearHeader = Lineární (výchozí)
+builderTools.legend.MachinimaTool.Page8.LinearDesc = Přímé linie mezi klíčovými snímky. Jednoduchý a předvídatelný pohyb.
+builderTools.legend.MachinimaTool.Page8.BezierHeader = Bézier
+builderTools.legend.MachinimaTool.Page8.BezierDesc = Hladké křivky pomocí ovládacích prvků, které lze táhnout pro tvarování cesty.
+builderTools.legend.MachinimaTool.Page8.SplineHeader = Spline
+builderTools.legend.MachinimaTool.Page8.SplineDesc = Automatické hladké křivky procházející všemi klíčovými snímky.
+builderTools.legend.MachinimaTool.Page8.BezierCommands = Příkazy cesty:
+builderTools.legend.MachinimaTool.Page8.EnableBezier = Povolit Bézier
+builderTools.legend.MachinimaTool.Page8.SmoothBezier = Hladké úchyty
+builderTools.legend.MachinimaTool.Page8.EnableSpline = Povolit spline
+
+builderTools.legend.MachinimaTool.Page9.Title = Příkazy konzole
+builderTools.legend.MachinimaTool.Page9.SceneCommands = Scéna: .mach scene [list | add | remove | save | load | copy | config | rename | rotate | delete]
+builderTools.legend.MachinimaTool.Page9.ActorCommands = Herec: .mach actor [list | add | remove | config | model | move | clone | rotate | scale | delete]
+builderTools.legend.MachinimaTool.Page9.EventCommands = Události: .mach event [list | add | remove]\n\
+Typy událostí: animace, kamera, příkaz, částice, cíl
+builderTools.legend.MachinimaTool.Page9.FileCommands = Soubory: .mach save | load | files | lock | autosave [sekundy]
+builderTools.legend.MachinimaTool.Page9.UtilityCommands = Nástroj: .mach tool | fps [hodnota] | speed [hodnota] | align | show [1-7] | restart
+
+builderTools.legend.PasteTool.Page1.Title = Štětec pro vkládání prefabrikátů
+builderTools.legend.PasteTool.Page1.Description = Umožňuje rychlé vkládání prefabrikátů jako při používání štětce. Podporuje většinu funkcí štětce.
+builderTools.legend.PasteTool.Page1.LoadPrefabOrCopy = Načíst prefabrikát nebo kopírovat výběr
+builderTools.legend.PasteTool.Page1.UseSelectionContents = Chcete-li použít obsah výběru, proveďte výběr pomocí nástroje výběru a zadejte „/copy”; poté se vraťte k nástroju vkládání, abyste použili kopii.
+builderTools.legend.PasteTool.Page1.OpensPrefabList = Otevřít seznam prefabrikátů; Klikněte na prefabrikát pro jeho načtení.
+builderTools.legend.PasteTool.Page1.PastePrefab = Vložit prefabrikát; podržte pro malování připravených položek
+builderTools.legend.PasteTool.Page1.StickPrefab = Připojit prefabrikát k cíli nebo odpojit, pokud je již připojen.
+builderTools.legend.PasteTool.Page1.RotatePrefabY = Otočit kolem Y
+builderTools.legend.PasteTool.Page1.RotatePrefabX = Otočit kolem X
+builderTools.legend.PasteTool.Page1.RotatePrefabZ = Otočit kolem Z
+builderTools.legend.PasteTool.Page1.ShowTexture = Přepnout texturu bloku
+builderTools.legend.PasteTool.Page1.CycleOrigin = Cyklovat původ (dole/střed/nahoře)
+builderTools.legend.PasteTool.Page2.Title = Upravit klíče
+builderTools.legend.PasteTool.Page2.ShiftPrefabLeftRight = Posunout prefabrikát doleva nebo doprava
+builderTools.legend.PasteTool.Page2.ShiftPrefabForwardBackward = Posunout prefabrikát dopředu nebo dozadu.
+builderTools.legend.PasteTool.Page2.ShiftPrefabUp = Posunout prefabrikát nahoru
+builderTools.legend.PasteTool.Page2.ShiftPrefabDown = Posunout prefabrikáty dolů
+builderTools.legend.PasteTool.Page2.RotatePrefabLeftRight = Otočit prefabrikát doleva nebo doprava
+builderTools.legend.PasteTool.Page2.RollPrefabLeftRight = Otočit prefabrikát doleva nebo doprava
+builderTools.legend.PasteTool.Page2.RollPrefabForwardBackward = Posunout prefabrikát dopředu nebo dozadu.
+builderTools.legend.PasteTool.Page2.ResetShifting = Resetovat posun
+
+builderTools.legend.SculptBrush.Page1.Title = Sochařský štětec
+builderTools.legend.SculptBrush.Page1.Description = Umožňuje zvedat a snižovat terén pro sochařství a spojování tvarů s větší přesností. Podporuje většinu funkcí štětce.
+builderTools.legend.SculptBrush.Page1.MeltAwayBlocks = Roztavit bloky kdekoliv chcete, vrstvu po vrstvě.
+builderTools.legend.SculptBrush.Page1.RaiseLayer = Zvednout vrstvu bloků tam, kam míříte.
+builderTools.legend.SculptBrush.Page1.Smooth = Hladký, nerovný terén
+builderTools.legend.SculptBrush.Page1.MaterialSelectedDescription = Po výběru materiálu umístí vrstvu tohoto materiálu na cílové místo.
+builderTools.legend.SculptBrush.Page1.SelectTargetMaterial = Vybrat konkrétní materiál
+builderTools.legend.SculptBrush.Page1.UndoLastBrush = Zpět poslední akci štětce
+builderTools.legend.SculptBrush.Page1.RedoLastUndo = Znovu poslední vrácenou akci
+builderTools.legend.SculptBrush.Page1.EditInventoryProperties = Upravit materiály, velikost, tvar a další vlastnosti v inventáři.
+
+builderTools.legend.SelectionTool.Page1.Title = Základní výběry
+builderTools.legend.SelectionTool.Page1.CreatingSelection = Vytváření výběru:
+builderTools.legend.SelectionTool.Page1.HoldAndDrag = 1. Stiskněte a podržte a táhněte pro výběr první osy, poté uvolněte.
+builderTools.legend.SelectionTool.Page1.AdjustAndClick = 2. Nastavte myš a klikněte znovu pro nastavení třetího rozměru.
+builderTools.legend.SelectionTool.Page1.ClearSelection = Vymazat výběr
+builderTools.legend.SelectionTool.Page1.ClickDragPanels = Klikněte a táhněte panely výběru.
+builderTools.legend.SelectionTool.Page1.ChangeSelectionSize = Změnit velikost výběru
+builderTools.legend.SelectionTool.Page1.MoveSelection = Pohyb výběru
+builderTools.legend.SelectionTool.Page1.ExtrudeFace = Vytlačit plochu
+builderTools.legend.SelectionTool.Page1.MultipleSelections = Více možností výběru:
+builderTools.legend.SelectionTool.Page1.NextSelection = Další výběr
+builderTools.legend.SelectionTool.Page1.PreviousSelection = Předchozí výběr
+builderTools.legend.SelectionTool.Page1.SetRedPoint = Nastavit červený bod jako cíl
+builderTools.legend.SelectionTool.Page1.SetGreenPoint = Nastavit zelený bod jako cíl
+builderTools.legend.SelectionTool.Page2.Title = Kopírovat/Přesunout/Otočit
+builderTools.legend.SelectionTool.Page2.WithSelectionCreated = Po vytvoření výběru:
+builderTools.legend.SelectionTool.Page2.ShowMoveTool = Zobrazit nástroj Přesunout
+builderTools.legend.SelectionTool.Page2.AttachToCursor = Připojit výběr k kurzoru
+builderTools.legend.SelectionTool.Page2.ShowRotationTool = Zobrazit nástroj Otočit
+builderTools.legend.SelectionTool.Page2.PasteAndExit = Vložit a ukončit
+builderTools.legend.SelectionTool.Page2.DuplicatePasteContinue = Duplikovat, vložit a pokračovat
+builderTools.legend.SelectionTool.Page2.CancelMovement = Zrušit pohyb a rotaci
+builderTools.legend.SelectionTool.Page2.DuplicateSelection = Vybrat dvakrát, poté vstoupit do režimu Pohyb/Otočit.
+builderTools.legend.SelectionTool.Page2.UsingYourSelection = Používajíc váš výběr:
+builderTools.legend.SelectionTool.Page2.CopySelection = Kopírovat výběr
+builderTools.legend.SelectionTool.Page2.CopyUsageOptions = Poté použijte nástroj Vložit (štětec + náhled) nebo příkaz „/paste”.
+builderTools.legend.SelectionTool.Page2.SavingPrefabs = Ukládání prefabrikátů:
+builderTools.legend.SelectionTool.Page2.SavePrefabCommand = Uložit výběr jako prefabrikát pomocí příkazu chatu
+builderTools.legend.SelectionTool.Page2.LoadPrefabReference = Viz legenda nástroje Vložit pro načtení prefabrikátů prostřednictvím UI.
+builderTools.legend.SelectionTool.Page3.Title = Příkazy výběru
+builderTools.legend.SelectionTool.Page3.BasicCommands = Základní příkazy:\n\
+- /set [Nastaví výběr na bloky]\n\
+- /clear [Vymaže všechny bloky ve výběru]\n\
+- /walls [Přidá stěny k výběru]\n\
+- /move [Přesune obsah výběru směrem, kam se díváte]\n\
+- /undo a /redo [Zpět a Znovu X krát]\n\
+- /copy [Kopíruje výběr do schránky]\n\
+- /cut [Vyjme výběr do schránky]\n\
+- /paste [Vloží schránku na vybrané místo]\n\
+- /stack [Skládá výběr směrem, kam se díváte X krát]\n\
+- /replace [Nahradí jeden materiál jiným]\n\
+- /hollow [Vyhloubí tvar, ponechávajíc střed prázdný]\n\
+- /flip [Zrcadlí bloky směrem, kam se díváte]\n\
+- /rotate [Otočí výběr]\n\
+- /expand [Rozšíří výběr směrem, kam se díváte]\n\
+- /contract [Zmenší výběr o zadanou vzdálenost]\n\
+- /deselect [Vymaže pole výběru]
+builderTools.legend.SelectionTool.Page3.SeeHelpMenu = Zkontrolujte menu „/help” pro více příkazů, které můžete spustit na vašem výběru.
+
+builderTools.legend.RulerTool.Page1.Title = Základní měření
+builderTools.legend.RulerTool.Page1.Description = Nástroj Pravítko umožňuje měřit vzdálenosti mezi více body v 3D prostoru, s podporou více měřicích linií.
+builderTools.legend.RulerTool.Page1.PlacePoint = Umístit měřicí bod na požadované místo.
+builderTools.legend.RulerTool.Page1.EndCurrentLine = Ukončit současnou měřicí linii a začít novou.
+builderTools.legend.RulerTool.Page1.SnapToAngles = Stiskněte a podržte pro zapnutí přichytávání pod úhlem 45° pro přesná měření.
+builderTools.legend.RulerTool.Page1.DistanceMeasurement = Měření vzdálenosti se zobrazují v každém bodě a podél každého segmentu linie. Linie jsou označeny barvami: červená (osa X), zelená (osa Y), modrá (osa Z) a bílá (diagonální).
+
+builderTools.legend.RulerTool.Page2.Title = Úprava bodů a linií
+builderTools.legend.RulerTool.Page2.PointEditing = Úprava existujících bodů:
+builderTools.legend.RulerTool.Page2.MovePoint = Klikněte pravým tlačítkem myši na existující bod pro jeho výběr a přesun.
+builderTools.legend.RulerTool.Page2.DropPoint = Klikněte znovu pravým tlačítkem myši pro upuštění bodu na nové poloze.
+builderTools.legend.RulerTool.Page2.DeletePoint = Odstranit najetý bod
+builderTools.legend.RulerTool.Page2.ClearCurrentLine = Odstranit všechny body současné linie
+builderTools.legend.RulerTool.Page2.ClearAllLines = Odstranit všechny linie a resetovat nástroj.
+
+builderTools.legend.RulerTool.Page3.Title = Více měřicích linií
+builderTools.legend.RulerTool.Page3.Description = Nástroj Pravítko umožňuje vytvářet a spravovat více nezávislých měřicích linií. Každá linie je sledována nezávisle a lze ji upravovat samostatně.
+builderTools.legend.RulerTool.Page3.NextLine = Přejít na další měřicí linii
+builderTools.legend.RulerTool.Page3.PreviousLine = Přejít na předchozí měřicí linii
+builderTools.legend.RulerTool.Page3.SwitchToLine = Klikněte levým tlačítkem myši na bod na jiné linii pro přepnutí na tuto linii.
+builderTools.legend.RulerTool.Page3.WorkflowTip = Tip: Po umístění bodů na linii klikněte levým tlačítkem myši pro její ukončení a automatické zahájení nové linie. Neaktivní linie se zobrazují se sníženou průhledností.
+
+builderTools.legend.SelectPrefabTool.Page1.Title = Selektor prefabrikátů
+builderTools.legend.SelectPrefabTool.Page1.Description = Editor prefabrikátů vytváří dočasné prostředí pro úpravu prefabrikátů a jejich opětovné uložení. Pokud opustíte editor prefabrikátů bez uložení, všechny provedené změny budou ztraceny.
+builderTools.legend.SelectPrefabTool.Page1.SelectingPrefabs = Výběr prefabrikátů:
+builderTools.legend.SelectPrefabTool.Page1.SelectPrefab = Vybrat prefabrikát, kliknutím na jeho kotvu.
+builderTools.legend.SelectPrefabTool.Page1.UnselectPrefab = Zrušit výběr aktuálně vybraného prefabrikátu.
+builderTools.legend.SelectPrefabTool.Page1.EditingPrefabs = Úprava prefabrikátů:
+builderTools.legend.SelectPrefabTool.Page1.OpenSaveUI = Otevřít UI pro ukládání/konfiguraci
+builderTools.legend.SelectPrefabTool.Page1.UpdateBoundingBox = Aktualizuje ohraničující box vybraného prefabrikátu na základě aktuálního výběru.
+builderTools.legend.SelectPrefabTool.Page1.TeleportToPrefab = Otevřít teleportační UI k prefabrikátům
+builderTools.legend.SelectPrefabTool.Page1.SetAnchorTitle = Nástroj pro ukotvení:
+builderTools.legend.SelectPrefabTool.Page1.SetAnchorDescription = Použijte nástroj Nastavit kotvu ve vašem inventáři pro změnu umístění bodu ukotvení prefabrikátu. Kotva určuje, kde bude prefabrikát umístěn během jeho generování.
+builderTools.legend.SelectPrefabTool.Page1.UsefulCommands = Užitečné příkazy:
+builderTools.legend.SelectPrefabTool.Page1.KillCommand = /pedit kill: Odstraní všechny prvky z vybraného prefabrikátu.
+/pedit exit – Opustí editor prefabrikátů bez uložení změn
+
+builderTools.tools.Paste.args.Origin.name = Původ
+builderTools.tools.Paste.args.Origin.values.Anchor = Kotva
+builderTools.tools.Paste.args.Origin.values.Bottom = Spodní
+builderTools.tools.Paste.args.Origin.values.Center = Střed
+builderTools.tools.Paste.args.Origin.values.Top = Horní
+
+builderTools.legend.EntityTool.Page1.Title = Nástroj entity
+builderTools.legend.EntityTool.Page1.Description = Generuje NPC a modely objektů, bloků a tvorů. Vyberte, přesuňte, otočte a škálujte prvky ve vašem světě.
+builderTools.legend.EntityTool.Page1.SelectingEntities = Výběr entity:
+builderTools.legend.EntityTool.Page1.SelectEntity = Vybrat/zachytit entitu
+builderTools.legend.EntityTool.Page1.FreeMove = Volně se pohybující objekt (podržte a táhněte)
+builderTools.legend.EntityTool.Page1.CancelMovement = Zrušit pohyb a vrátit se na předchozí pozici.
+builderTools.legend.EntityTool.Page1.AdjustDistance = Upravit vzdálenost mezi prvky
+
+builderTools.legend.EntityTool.Page2.Title = Režimy transformace
+builderTools.legend.EntityTool.Page2.TransformModes = Režimy transformace:
+builderTools.legend.EntityTool.Page2.TranslateMode = Vstoupit do režimu překladu
+builderTools.legend.EntityTool.Page2.RotateMode = Vstoupit do režimu rotace
+builderTools.legend.EntityTool.Page2.RotateHeadMode = Vstoupit do režimu rotace hlavy
+builderTools.legend.EntityTool.Page2.FreeMoveMode = Připojit k kurzoru
+builderTools.legend.EntityTool.Page2.Scale = Škálovat vybraný prvek
+
+builderTools.legend.EntityTool.Page3.Title = Akce
+builderTools.legend.EntityTool.Page3.EntityActions = Akce entity:
+builderTools.legend.EntityTool.Page3.Clone = Klonovat vybranou entitu
+builderTools.legend.EntityTool.Page3.Remove = Odstranit vybranou entitu
+builderTools.legend.EntityTool.Page3.Freeze = Přepnout Zamrazit prvek
+builderTools.legend.EntityTool.Page3.MovementOptions = Možnosti pohybu:
+builderTools.legend.EntityTool.Page3.SurfaceLock = Aktivovat/deaktivovat režim uzamčení povrchu
+builderTools.legend.EntityTool.Page3.SpawnUI = Spawn UI:
+builderTools.legend.EntityTool.Page3.OpenSpawnUI = Otevřít UI pro spawnování entit
+
+builderTools.panel.selectedEntity = Vybraná entita
+builderTools.panel.entitySettings = Nastavení nástroje Entity
+builderTools.panel.noSelection = Není vybrána žádná entita.
+builderTools.panel.entityType = Typ
+builderTools.panel.entityModel = Model
+builderTools.panel.entityName = Jméno
+builderTools.panel.entityPosition = Pozice
+builderTools.panel.entityRotation = Rotace
+builderTools.panel.entityScale = Škálování
+builderTools.panel.entityAllowPickup = Povolit vyzvednutí
+builderTools.panel.entityClone = Klon
+builderTools.panel.entityRemove = Odstranit
+builderTools.panel.entityPin = Připnout entitu
+builderTools.panel.entityUnpin = Odepnout prvek
+builderTools.panel.surfaceLock = Uzamknout na povrchu
+builderTools.panel.gridSnap = Přichytit k mřížce
+builderTools.panel.gridSize = Velikost mřížky
+
+builderTools.commands.clearEntities.description = Odstraní všechny prvky z aktuálního výběru.
+
+builderTools.entityType.npc = NPC
+builderTools.entityType.item = Položka
+builderTools.entityType.model = Model
+builderTools.entityType.unknown = Neznámý
+builderTools.entityModel.fallback.npc = NPC #{id}
+builderTools.entityModel.fallback.item = Položka #{id}
+builderTools.entityModel.fallback.block = Blok #{id}
+builderTools.entityModel.fallback.unknown = #{id}
+
+builderTools.panel.entityLightEnabled = Světlo aktivováno
+builderTools.panel.entityLightColor = Barva světla
+builderTools.panel.entityLightRadius = Poloměr světla
+builderTools.panel.npcDebug = Debugování NPC
+builderTools.panel.npcState = Stav
+builderTools.panel.npcHealth = Zdraví
+builderTools.panel.npcStamina = Výdrž
+builderTools.panel.npcSpeed = Rychlost
+builderTools.panel.npcTarget = Cíl
+builderTools.panel.npcTarget.none = Žádný
+# === codex ===
+codex.title = Kódex
+
+codex.movement = Pohyb
+
+codex.mantling = Šplhání
+codex.mantling.description = Když narazíte na překážku vyšší než vy, jděte dopředu a stiskněte tlačítko skoku, abyste se po ní vyšplhali.
+
+codex.sliding = Klouzání
+codex.sliding.description = Během běhu stiskněte klávesu „přikrčit”, abyste se klouzali.
+
+codex.rolling = Kutálení
+codex.rolling.description = Během pádu podržte klávesu „Přikrčit”, abyste se kutáleli a vyhnuli se zranění z pádu.
+# === confirmQuitOverlay ===
+confirmQuitOverlay.title = Odejít ze hry
+confirmQuitOverlay.text = Jste si jisti, že chcete odejít?
+
+confirmQuitOverlay.buttons.returnToGame = Vrátit se do hry
+confirmQuitOverlay.buttons.quitToDesktop = Odejít na plochu
+# === contentCreation ===
+contentCreation.pageTitle = Kreativní nástroje
+
+contentCreation.introText = Toto je centrum, kde můžete přistupovat k různým nástrojům a editorům, které vám pomohou vytvářet obsah v Hytale.
+\n\
+Chcete-li začít, stačí vybrat jeden z nástrojů z nabídky výše.
+
+contentCreation.actionButton.toggleBlockEditingTools = Přepnout nástroje pro úpravu bloků
+
+contentCreation.notification.noBlockTargeted = Chcete-li jej otevřít v Editoru assetů, musíte vybrat blok.
+
+# Blockbench Modals
+contentCreation.modal.blockbench.installRequired.title = Vyžadována instalace Blockbench
+contentCreation.modal.blockbench.installRequired.text = Pro úpravu 3D modelů používáme Blockbench. Vypadá to, že nemáte nainstalovaný Blockbench. Spuštění Blockbench z Hytale je možné pouze pokud jste jej nainstalovali pomocí instalátoru. Chcete jej nyní nainstalovat z jejich webové stránky?
+contentCreation.modal.blockbench.installRequired.confirm = Nainstalovat Blockbench
+contentCreation.modal.blockbench.pluginRequired.title = Vyžadován plugin Hytale
+contentCreation.modal.blockbench.pluginRequired.text = Vypadá to, že máte nainstalovaný Blockbench, ale chybí plugin Hytale.\n\nNainstalujte plugin Hytale. Instrukce pro tuto akci najdete na webové stránce Blockbench.
+contentCreation.modal.blockbench.pluginRequired.confirm = Zobrazit instrukce instalace
+contentCreation.modal.blockbench.launchFailed.title = Chyba při spouštění Blockbench
+contentCreation.modal.blockbench.launchFailed.text = Váš systém našel Blockbench, ale nemohli jsme jej spustit.\n\nZkuste spustit Blockbench ručně.
+
+contentCreation.navigation.assets = assety
+
+contentCreation.navigation.assetEditor = Editor assetů
+contentCreation.navigation.assetEditor.tooltipTitle = Spustit aplikaci Editor assetů
+contentCreation.navigation.assetEditor.tooltipDesc = To spustí externí program umožňující úpravu konfiguračních assetů hry v reálném čase.
+contentCreation.navigation.blockbench = Editor modelů
+contentCreation.navigation.blockbench.tooltipTitle = Spustit aplikaci Blockbench (Editor modelů)
+contentCreation.navigation.blockbench.tooltipDesc = Vytvářejte vlastní modely a animace pro Hytale.
+contentCreation.navigation.nodeeditor = Editor uzlů assetů
+contentCreation.navigation.nodeeditor.tooltipTitle = Spustit aplikaci Asset Node Editor
+contentCreation.navigation.nodeeditor.tooltipDesc = Upravujte assety pomocí vizuálního editoru uzlů skriptů.
+contentCreation.navigation.machinima = Machinima
+contentCreation.navigation.machinima.tooltipTitle = Otevřít editor Machinima
+contentCreation.navigation.machinima.tooltipDesc = Vytvářejte vlastní filmy v Hytale pomocí editoru Machinima.
+contentCreation.navigation.buildertools = Nástroje pro stavitele
+contentCreation.navigation.buildertools.tooltipTitle = Otevřít Nástroje stavitele
+contentCreation.navigation.buildertools.tooltipDesc = Nástroje pro úpravu bloků (výběr, štětec, sochařství atd.) \n\
+\n\
+Upravujte bloky ve vašem světě pomocí nástrojů pro úpravu bloků, které najdete v záložkách nástrojů v kreativním inventáři.
+
+contentCreation.modal.nodeeditor.nonsupported.title = Nepodporovaná platforma
+contentCreation.modal.nodeeditor.nonsupported.text = Editor uzlů není aktuálně podporován na vaší platformě.\n\nAktuálně podporujeme pouze Windows, ale pracujeme na zpřístupnění této funkce na všech PC platformách.
+
+contentCreation.navigation.worldtools = Svět
+contentCreation.navigation.worldtools.prefabEditor = Editor prefabrikátů
+contentCreation.navigation.worldtools.prefabEditor.tooltipTitle = Vytvářejte nebo upravujte prefabrikáty v samostatném prostoru.
+contentCreation.navigation.worldtools.prefabList = Seznam prefabrikátů
+contentCreation.navigation.worldtools.prefabList.tooltipTitle = Zobrazuje seznam všech uživatelem vytvořených prefabrikátů; Klikněte na jeden pro načtení do nástroje Vložit.
+contentCreation.navigation.worldtools.spawnEntity = Spawn entita
+contentCreation.navigation.worldtools.spawnParticle = Spawn částice
+contentCreation.navigation.worldtools.changeModel = Změnit model hráče
+contentCreation.navigation.worldtools.tintChunk = Barva chunku
+contentCreation.navigation.worldtools.instances = Instance
+contentCreation.navigation.worldtools.playSound = Přehrát zvuk
+contentCreation.navigation.worldtools.playSound.tooltipTitle = Procházejte a přehrávejte zvukové události.
+contentCreation.navigation.worldtools.importObj = Import OBJ
+contentCreation.navigation.worldtools.importObj.tooltipTitle = Převeďte 3D modely OBJ na voxely a zkopírujte je do schránky.
+contentCreation.navigation.worldtools.importImage = Import obrázku
+contentCreation.navigation.worldtools.importImage.tooltipTitle = Převeďte 2D obrázky na blokovou grafiku a zkopírujte je do schránky.
+
+contentCreation.navigation.help = Pomoc
+contentCreation.navigation.help.commands = Příkazy
+# === controls ===
+# Timeline Control
+controls.timeline.tooltip.muteTrack = Ztlumit stopu
+controls.timeline.tooltip.playPause = Přehrát/Pauza
+controls.timeline.tooltip.stop = Zastavit
+controls.timeline.tooltip.addTrack = Přidat stopu
+controls.timeline.button.autoRestart = Automatické restartování
+controls.timeline.tooltip.toggleLoop = Přepnout smyčku
+controls.timeline.label.time = Čas: {time}s
+controls.timeline.label.frame = Rámec: {frame}
+controls.timeline.label.duration = Trvání: {duration}
+controls.timeline.label.fps = FPS: {fps}
+controls.timeline.tooltip.keyframe = Rámec: {time}
+# === devTools ===
+devTools.tabs.Console = Konzole
+devTools.tabs.GameInfo = Informace o hře
+
+devTools.options = Možnosti
+
+devTools.popupMenu.copyGameInfo = Kopírovat informace o hře do schránky
+devTools.popupMenu.createDefect = Vytvořit defekt
+
+devTools.gameStats.popupMenu.editInAssetEditor = Upravit v Editoru assetů
+devTools.gameStats.popupMenu.copyValue = Kopírovat hodnotu
+
+devTools.logEntry.popupMenu.copyMessage = Kopírovat zprávu
+
+devTools.gameInfo.sections.Build = Build
+devTools.gameInfo.sections.Hardware = Hardware
+devTools.gameInfo.sections.World = Svět
+devTools.gameInfo.sections.Chunks = Chunks
+devTools.gameInfo.sections.AtlasSizes = Velikosti atlasu
+devTools.gameInfo.sections.Assets = Assety
+devTools.gameInfo.sections.UI = UI
+devTools.gameInfo.sections.Particles = Částice
+devTools.gameInfo.sections.Network = Síť
+
+devTools.gameInfo.keys.Branch = Větev
+devTools.gameInfo.keys.Revision = Revize
+devTools.gameInfo.keys.FrameworkVersion = Verze .Net
+
+devTools.gameInfo.keys.GPUVendor = GPU Vendor
+devTools.gameInfo.keys.GPURenderer = GPU Renderer
+devTools.gameInfo.keys.GPUVersion = GPU Verze
+devTools.gameInfo.keys.WindowSize = Velikost okna
+devTools.gameInfo.keys.ViewportSize = Velikost viewportu
+devTools.gameInfo.keys.SceneSize = Velikost scény
+
+devTools.gameInfo.keys.Biome = Biom
+devTools.gameInfo.keys.Zone = Zóna
+devTools.gameInfo.keys.Environment = Prostředí
+devTools.gameInfo.keys.Weather = Počasí
+devTools.gameInfo.keys.Entities = Entity
+devTools.gameInfo.keys.AudioEvents = Zvukové události
+devTools.gameInfo.keys.SoundEffect = Zvukový efekt
+devTools.gameInfo.keys.ViewDistance = Vzdálenost pohledu
+devTools.gameInfo.keys.Heightmap = Výšková mapa
+devTools.gameInfo.keys.Tint = Barva
+devTools.gameInfo.keys.Light = Světlo
+devTools.gameInfo.keys.Music = Hudba
+devTools.gameInfo.keys.TargetBlock = Cílový blok
+devTools.gameInfo.keys.HitBox = Hitbox
+devTools.gameInfo.keys.Orientation = Orientace
+devTools.gameInfo.keys.FeetPosition = Pozice nohou
+devTools.gameInfo.keys.ChunkPosition = Pozice chunku
+
+devTools.gameInfo.keys.MapAtlasSize = Mapa
+devTools.gameInfo.keys.EntityAtlasSize = Entita
+devTools.gameInfo.keys.IconAtlasSize = Ikona
+devTools.gameInfo.keys.UIAtlasSize = UI
+devTools.gameInfo.keys.CustomUIAtlasSize = Vlastní UI
+
+devTools.gameInfo.keys.ChunksLoaded = Načteno
+devTools.gameInfo.keys.ChunksDrawable = Kreslitelných
+devTools.gameInfo.keys.ChunksMax = Max
+devTools.gameInfo.keys.ChunksQueued = Ve frontě
+devTools.gameInfo.keys.ChunksRebuilding = Přestavování
+devTools.gameInfo.keys.ChunksUploadReady = Připraveno k nahrání
+devTools.gameInfo.keys.ChunksToUpdate = K aktualizaci
+devTools.gameInfo.keys.ChunksUpToDate = Aktualizováno
+
+devTools.gameInfo.keys.ActivelyReferencedAssets = Aktivně odkazované assety
+devTools.gameInfo.keys.BuiltInAssets = Vestavěné
+devTools.gameInfo.keys.CachedAssets = Cacheované
+
+devTools.gameInfo.keys.UIScale = Škálování
+
+devTools.gameInfo.keys.ParticleSystems = Systémy
+devTools.gameInfo.keys.ParticleProxies = Proxy
+devTools.gameInfo.keys.ParticleBlend = Blend
+devTools.gameInfo.keys.ParticleDistortion = Distortion
+devTools.gameInfo.keys.ParticleErosion = Eroze
+
+devTools.gameInfo.keys.NetworkSent = Odesláno
+devTools.gameInfo.keys.NetworkReceived = Přijato
+# === disconnection ===
+disconnection.title.disconnected = Odpojeno od serveru
+disconnection.title.failedToConnect = Nelze se připojit k serveru.
+
+disconnection.button.quitToMainMenu = Odejít do hlavního menu
+disconnection.button.reconnect = Znovu připojit
+disconnection.button.reconnect.inProgress = Připojování...
+
+disconnection.button.tryAgain = Zkusit znovu
+disconnection.button.tryAgain.inProgress = Připojování...
+
+disconnection.autoConnectingIn = Připojování za {seconds}
+
+disconnection.error.unexpectedError = Došlo k neočekávané chybě.
+disconnection.error.noConnectectionEstablished = Nelze navázat spojení.
+# === gameLoadingView ===
+gameLoadingView.hints.constructionThanks = Děkujeme za hraní, když jsme ve výstavbě! - Překlad: CeskyVaclav a Komunita
+gameLoadingView.hints.futureTipsAndTricks = Na této obrazovce se zobrazí tipy a triky, které vám pomohou v dobrodružství. - Překlad: CeskyVaclav a Komunita
+
+gameLoadingView.status.waitingForShutdown = Čekání na dokončení vypínání serveru...
+gameLoadingView.status.connecting = Připojování...
+gameLoadingView.status.connectingP2P = Připojování k „{name}” od „{host}”... ({current}/{total})
+gameLoadingView.status.bootingServer = Spouštění serveru...
+gameLoadingView.status.enterPassword = Zadejte heslo serveru.
+gameLoadingView.status.wrongPassword = Nesprávné heslo. Zbývá {attempts, plural, one {# pokus} few {# pokusy} other {# pokusů}}.
+
+gameLoadingView.password.title = Heslo serveru
+gameLoadingView.password.submit = Přihlásit se
+# === gamePageNavigation ===
+gamePageNavigation.buttons.Inventory = Inventář
+gamePageNavigation.buttons.Map = Mapa
+gamePageNavigation.buttons.ContentCreation = Kreativní nástroje
+gamePageNavigation.buttons.ContentCreation.disabledTooltip = Kreativní menu je dostupné pouze v kreativním režimu.
+gamePageNavigation.buttons.ContentCreation.disabledTooltip.title = [TMP] KREATIVNÍ REŽIM
+gamePageNavigation.buttons.ContentCreation.disabledTooltip.description = [TMP] V kreativním režimu budete mít přístup k výkonným nástrojům pro úpravu. Chcete-li přejít do kreativního režimu, zadejte „/op self”, poté aktivujte herní režim pomocí klávesové zkratky „O”.
+gamePageNavigation.earlyAccess = Raný přístup
+# === general ===
+general.button.cancel = Zrušit
+general.button.confirm = Potvrdit
+general.button.save = Uložit
+general.button.ok = OK.
+general.button.saveChanges = Uložit změny
+general.button.discardChanges = Zahodit změny
+general.button.resetDefaults = Obnovit výchozí
+general.button.close = Zavřít
+general.button.back = Zpět
+general.button.add = Přidat
+general.button.delete = Smazat
+general.button.remove = Odebrat
+general.button.edit = Upravit
+general.button.select = Vybrat
+general.button.browse = Procházet
+
+general.label.loading = Načítání...
+
+general.searchField.placeholder = Hledat
+general.filterField.placeholder = Filtrovat
+
+general.dialog.error.title = Chyba
+
+general.checkbox.on = Zapnuto
+general.checkbox.off = Vypnuto
+
+general.gamemodes.adventure = Dobrodružství
+general.gamemodes.creative = Kreativní
+
+general.relativeTime.now = Právě teď
+general.relativeTime.lessThanAMinute = před méně než minutou
+general.relativeTime.minute = před minutou
+general.relativeTime.minutes = před {minutes} minutami
+general.relativeTime.hour = před hodinou
+general.relativeTime.hours = před {hours} hodinami
+general.relativeTime.day = před dnem
+general.relativeTime.days = před {days} dny
+general.relativeTime.month = před měsícem
+general.relativeTime.months = před {months} měsíci
+general.relativeTime.year = před rokem
+general.relativeTime.years = před {years} lety
+
+general.chatMessage.failedToSaveScreenshot = Nelze uložit snímek obrazovky!
+general.chatMessage.requestCancelled = Požadavek byl zrušen.
+# === hud ===
+hud.playerList.onlinePlayers = Hráči online
+hud.playerList.username = Uživatelské jméno
+hud.playerList.ping = Ping
+
+hud.itemSlotSelector.noItem = Žádná položka
+hud.itemSlotSelector.empty = Prázdný
+hud.itemSlotSelector.invalidItem = Neplatná položka
+
+hud.entityEffects.defaultBuffName = Posílení
+hud.entityEffects.defaultDebuffName = Oslabení
+
+hud.portalPanel.title = {name}
+hud.portalPanel.portalLabel = Fragment Orbisu
+hud.portalPanel.timeUntilBreach = Čas do průlomu neplatnosti
+hud.portalPanel.timeUntilClose = Čas do zavření portálu
+
+hud.inputBindings.inventory = Inventář
+hud.inputBindings.creationTools = Kreativní nástroje
+hud.inputBindings.map = Mapa
+hud.inputBindings.rotateBlock = Otočit blok
+hud.inputBindings.selectBlockVariant = Varianta bloku
+
+hud.networkQuality.ping.good = Nízká latence (<50 ms)
+hud.networkQuality.ping.okay = Střední latence (50-100 ms): Můžete zaznamenat mírné zpoždění.
+hud.networkQuality.ping.poor = Vysoká latence (100-200 ms) — mohou nastat zpoždění.
+hud.networkQuality.ping.bad = Velmi vysoká latence (>=200 ms): Hra může běžet pomalu nebo nereagovat.
+hud.networkQuality.jitter.good = Nízký jitter (<5 ms)
+hud.networkQuality.jitter.okay = Střední jitter (5-15 ms): Můžete zaznamenat malé trhání.
+hud.networkQuality.jitter.poor = Vysoký jitter (15-30 ms): herní zážitek může být nestabilní.
+hud.networkQuality.jitter.bad = Velmi vysoký jitter (>=30 ms): mohou nastat časté skoky latence nebo odrazy.
+hud.networkQuality.packetLoss.good = Nízká ztráta paketů (<0,1%)
+hud.networkQuality.packetLoss.okay = Střední ztráta paketů (0,1-1%) – můžete zaznamenat sporadické zpoždění nebo vynechané akce.
+hud.networkQuality.packetLoss.poor = Vysoká ztráta paketů (1-3%) – některé akce nebo aktualizace nemusí být registrované.
+hud.networkQuality.packetLoss.bad = Velmi vysoká ztráta paketů (>=3%) — mohou nastat závažné desynchronizace nebo odpojení.
+
+hud.networkQuality.worldSaving = Ukládání světa
+hud.networkQuality.offlineMode = Offline režim: Vaše relace vypršela. Restartujte hru, abyste se znovu připojili.
+
+hud.sleep.awaiting = {asleep}/{total} hráči spí...
+hud.sleep.waitingOn = Čekám na {who}
+
+hud.chat.openLinkModal.title = Otevřít externí webovou stránku?
+hud.chat.openLinkModal.text = Za chvíli otevřete stránku „{url}” ve webovém prohlížeči. \n\
+\n\
+Buďte opatrní při otevírání odkazů od ostatních hráčů, zejména pokud vás žádají o poskytnutí osobních údajů.
+\n\
+Opravdu chcete pokračovat?
+hud.chat.openLinkModal.confirm = Otevřít webovou stránku
+# === inventory ===
+inventory.chest.title = Truhla
+inventory.chest.tooltip.takeAll = Vzít vše: Přenést všechny položky z kontejneru do inventáře.
+inventory.chest.tooltip.putAll = Vložit vše: Přenést všechny položky vybavení do kontejneru.
+inventory.chest.tooltip.quickStack = Rychlý stack: Přenést položky z inventáře do kontejneru pro typy položek, které již existují.
+
+inventory.inventory.title = Inventář
+inventory.itemQuantityPopup.title = Rozdělený stack:
+
+inventory.itemLibrary.title = Knihovna položek
+inventory.itemLibrary.options.title = Možnosti
+inventory.itemLibrary.options.showVariants = Zobrazit varianty
+
+inventory.itemPreview.title = Náhled položky
+
+inventory.character.tooltip.togglePocketCrafting = Přepnout kapesní crafting
+inventory.character.tooltip.toggleBackpack = Přepnout batoh
+inventory.character.tooltip.lockedBackpack = Odemčeno vytvořením vylepšení batohu.
+inventory.character.tooltip.toggleMemories = Přepnout shromážděné vzpomínky
+inventory.character.tooltip.disabledMemories = [TMP] Vzpomínky jsou v tomto kontextu zakázány.
+inventory.character.tooltip.disabledBackpack = [TMP] V tomto kontextu je batoh zakázán.
+inventory.character.tooltip.lockedMemories = Najděte Zapomenutý chrám, abyste získali více informací.
+inventory.character.tooltip.pocketCraftingDisabled = [TMP] V tomto kontextu je kapesní crafting zakázán.
+
+inventory.character.stats.mana = Mana
+inventory.character.stats.health = Zdraví
+inventory.character.stats.stamina = Výdrž
+inventory.character.stats.defense = Obrana
+inventory.character.stats.stats = Statistiky
+
+inventory.crafting.title = Crafting
+inventory.crafting.button.craft = Craftit
+inventory.crafting.button.craft1 = Craftit
+inventory.crafting.button.craft10 = x10
+inventory.crafting.button.craft10.tooltip = Craftit x10
+inventory.crafting.button.craftAll = Vše
+inventory.crafting.button.craftAll.tooltip = Craftit vše
+inventory.crafting.button.craftX = x{count}
+inventory.crafting.button.crafting = Craftování...
+inventory.crafting.unknownItem = Neznámá položka
+
+inventory.crafting.unknownItem.knowledgeRequired = Recept ještě nebyl objeven
+inventory.crafting.unknownItem.memoriesCountRequired = Najděte <color is="#f1ba50">Zapomenutý chrám</color> a obnovte vzpomínky {memories}, abyste odemkli tento recept!
+inventory.crafting.lockedItem.benchTierLevelRequired = Vyžaduje úroveň {benchname} {level}
+
+inventory.bench.tierLevelX = Úroveň {level}
+inventory.bench.tierLevelX.requirements = Požadavky pro úroveň {level}
+inventory.bench.tierLevelX.upgrade = Upgradovat na úroveň {level}
+inventory.bench.tier.button.upgrade = Vylepšit
+inventory.bench.tier.max = DOSAŽENO MAXIMA
+
+inventory.crafting.ingredient.tooltip.pullingFromChests = Nemáte dostatek surovin ve svém inventáři. Používání položek z blízkých truhel.
+
+inventory.crafting.options.hideUnknownRecipes = Skrýt neznámé recepty
+
+inventory.processing.button.turnOn = Zapnout
+inventory.processing.button.turnOff = Vypnout
+inventory.processing.panel.fuel.title = Palivo
+inventory.processing.panel.output.title = Výstup
+
+inventory.panel.input.title = Vstup
+
+inventory.itemInfo.title = Informace o položce
+inventory.itemInfo.hoverInfo = Najetím kurzoru na položku se dozvíte více informací zde.
+inventory.itemInfo.itemSet = Sada položek
+
+inventory.recipesButton = Recepty
+
+inventory.recipeCataloguePopup.title = Katalog receptů
+
+inventory.fieldcraft.title = kapesní crafting
+
+inventory.storage.filterTooltips.weapons = Zobrazit pouze zbraně
+inventory.storage.filterTooltips.armor = Zobrazit pouze brnění
+inventory.storage.filterTooltips.blocks = Zobrazit pouze stavební materiály
+
+inventory.button.autoSort.tooltip = Seřadit položky podle typu
+inventory.dropdown.autoSortBy = Automaticky seřadit podle:
+inventory.dropdown.autoSort.types.Name = Jméno
+inventory.dropdown.autoSort.types.Type = Typ
+inventory.dropdown.autoSort.types.Rarity = Vzácnost
+
+inventory.memories.title = Shromážděné vzpomínky
+
+inventory.action.toggleBuilderTools = Přepnout nástroje stavitele
+inventory.action.pickHalf = Vzít polovinu
+inventory.action.pickOne = Vzít jednoho
+inventory.action.smartMove = Vzít rychle
+inventory.action.resize = Změnit množství
+inventory.action.placeOne = Umístit jedno
+inventory.action.resizeMod = Změnit množství x5
+# === itemTooltip ===
+itemTooltip.resourceType.name = Zdroj: {name}
+itemTooltip.id = ID:
+itemTooltip.utility = Užitečnost
+itemTooltip.consumable = Spotřební
+
+itemTooltip.cursed.label = Prokletý
+itemTooltip.cursed.help = Přežij fragment, abyste očistili
+
+itemTooltip.stats.Health = Zdraví
+itemTooltip.stats.Stamina = Výdrž
+itemTooltip.stats.Mana = Mana
+itemTooltip.stats.Oxygen = Kyslík
+itemTooltip.stats.Defense = Obrana
+itemTooltip.stats.FireResistance = Odolnost proti ohni
+itemTooltip.stats.WaterResistance = Odolnost proti vodě
+itemTooltip.stats.EarthResistance = Odolnost proti zemi
+itemTooltip.stats.AirResistance = Odolnost proti vzduchu
+itemTooltip.stats.SignatureEnergy = Signature Energy
+itemTooltip.stats.Ammo = Munice
+itemTooltip.stats.SignatureCharges = Poplatky za schopnosti
+
+itemTooltip.damageClass.unknown = Neznámý
+itemTooltip.damageClass.light = Lehký útok
+itemTooltip.damageClass.charged = Nabitý útok
+itemTooltip.damageClass.signature = Útok schopností
+
+itemTooltip.increases = Zvyšuje
+itemTooltip.decreases = Snižuje
+itemTooltip.modifies = Upravuje
+itemTooltip.damageBy = škody způsobené:
+itemTooltip.resistance = Odolnost:
+
+itemTooltip.oneHanded = Jednoruční
+itemTooltip.twoHanded = Obouruční
+# === machinima ===
+machinima.bindings.TogglePause = Přepnout pauzu
+machinima.bindings.ToggleDisplay = Přepnout zobrazení
+machinima.bindings.ToggleCamera = Přepnout kameru
+machinima.bindings.RestartScene = Restartovat scénu
+machinima.bindings.FrameDecrement = Snížit snímek
+machinima.bindings.FrameIncrement = Zvětšit snímek
+machinima.bindings.FrameTimeDecrease = Snížit čas snímku
+machinima.bindings.FrameTimeIncrease = Zvětšit čas snímku
+machinima.bindings.KeyframeDecrement = Snížit klíčový snímek
+machinima.bindings.KeyframeIncrement = Zvětšit klíčový snímek
+machinima.bindings.PlaybackSpeedDecrease = Snížit rychlost přehrávání
+machinima.bindings.PlaybackSpeedIncrease = Zvětšit rychlost přehrávání
+machinima.bindings.AddKeyframe = Přidat klíčový snímek
+machinima.bindings.RemoveKeyframe = Odebrat klíčový snímek
+machinima.bindings.EditKeyframe = Upravit klíčový snímek
+machinima.bindings.OriginAction = Akce původu
+machinima.bindings.CycleSelectionMode = Cyklovat režim výběru
+
+# Header
+machinima.header.placeholder.selectScene = Vybrat scénu
+machinima.header.button.create = Vytvořit
+machinima.header.button.delete = Smazat
+machinima.header.button.save = Uložit
+machinima.header.button.settings = Nastavení
+machinima.header.button.help = Nápověda
+
+# Modal Titles
+machinima.modal.title.inputBindings = Vstupní vazby
+machinima.modal.title.editScene = Upravit scénu
+machinima.modal.title.createScene = Vytvořit novou scénu
+machinima.modal.title.createActor = Vytvořit nového herce
+machinima.modal.title.editActor = Upravit herce
+machinima.modal.title.editKeyframeEvent = Upravit událost klíčového snímku
+machinima.modal.title.addKeyframeSetting = Přidat nastavení klíčového snímku
+machinima.modal.title.addKeyframeEvent = Přidat událost klíčového snímku
+machinima.modal.title.deleteEvent = Smazat událost
+machinima.modal.title.deleteScene = Smazat scénu
+
+# Modal Buttons
+machinima.modal.button.close = Zavřít
+machinima.modal.button.saveChanges = Uložit změny
+machinima.modal.button.createScene = Vytvořit scénu
+machinima.modal.button.createActor = Vytvořit herce
+machinima.modal.button.addSetting = Přidat nastavení
+machinima.modal.button.addEvent = Přidat událost
+machinima.modal.button.delete = Smazat
+
+# Modal Messages
+machinima.modal.message.deleteEvent = Chcete smazat událost „{name}”?
+machinima.modal.message.deleteScene = Chcete smazat scénu „{name}”?
+
+# Modal Labels
+machinima.modal.label.name = Jméno
+machinima.modal.label.type = Typ
+machinima.modal.label.animationSlot = Slot animace
+machinima.modal.label.animationId = ID animace
+machinima.modal.label.command = Příkaz
+machinima.modal.label.particleSystem = Částicový systém
+machinima.modal.label.targetActor = Cílový herec
+machinima.modal.label.actorType = Typ herce
+machinima.modal.label.item = Položka
+machinima.modal.label.scale = Škálování
+machinima.modal.label.model = Model
+machinima.modal.label.fieldOfView = Zorné pole
+machinima.modal.label.lighting = Osvětlení
+machinima.modal.label.light = Světlý
+
+# Modal Checkboxes
+machinima.modal.checkbox.activateCamera = Aktivovat kameru
+
+# Modal Placeholders
+machinima.modal.placeholder.actorName = Jméno herce
+machinima.modal.placeholder.selectActorType = Vybrat typ herce
+machinima.modal.placeholder.selectEvent = Vybrat událost
+machinima.modal.placeholder.selectItem = Vybrat položku
+
+# Keyframe Editor
+machinima.keyframe.tab.settings = Nastavení
+machinima.keyframe.tab.events = Události
+machinima.keyframe.button.addSetting = Přidat nastavení
+machinima.keyframe.button.addEvent = Přidat událost
+machinima.keyframe.button.edit = Upravit
+machinima.keyframe.button.delete = Smazat
+machinima.keyframe.tooltip.deleteEvent = Smazat událost
+# === mainMenu ===
+# Navigation
+
+mainMenu.navigation.quit = Odejít
+mainMenu.navigation.settings = Nastavení
+mainMenu.navigation.worlds = Světy
+mainMenu.navigation.minigames = Minihry
+mainMenu.navigation.servers = Servery
+mainMenu.navigation.avatar = Můj avatar
+mainMenu.navigation.shop = Obchod
+
+mainMenu.discord.button.label = Připojit se k Discordu
+mainMenu.discord.button.tooltip = Otevřít náš Discord v externím prohlížeči.
+
+mainMenu.feedback.button.label = [TMP] Odeslat zpětnou vazbu
+
+# Minigames
+
+mainMenu.minigames.title = Minihry
+mainMenu.minigames.title.appendix = Již brzy!
+
+mainMenu.minigames.wip.title = Práce v průběhu
+mainMenu.minigames.wip.text = Tento herní režim bude dostupný v budoucnu.
+
+# Shop
+
+mainMenu.shop.title = Dostupné edice
+mainMenu.shop.owned = Vlastněno
+mainMenu.shop.upgrade = Vylepšit
+
+# Multiplayer
+
+mainMenu.servers.title = Servery
+
+mainMenu.servers.groups.recent = Nejnovější
+mainMenu.servers.groups.favorite = Oblíbený
+mainMenu.servers.groups.friends = Přátelé
+mainMenu.servers.groups.all = Všechny servery
+mainMenu.servers.groups.lan = Lokální
+
+mainMenu.servers.groups.join = Připojit se k serveru
+mainMenu.servers.groups.homepage = Zobrazit úplnou stránku serveru
+
+mainMenu.servers.lookingForLan = Hledám lokální servery...
+mainMenu.servers.connectingToServer = Připojování k {name}...
+mainMenu.servers.connect = Připojit
+mainMenu.servers.connectionAddress = Adresa připojení
+mainMenu.servers.connectDirectly = Přímé připojení
+mainMenu.servers.joinViaCode = Připojit se pomocí kódu
+mainMenu.servers.inviteCode = Kód pozvánky
+mainMenu.servers.inviteCodePlaceholder = Vložte zde kód pozvánky...
+mainMenu.servers.join = Připojeno
+mainMenu.servers.joinViaCode.error.empty = Zadejte kód pozvánky.
+mainMenu.servers.joinViaCode.error.invalidCode = Neplatný formát kódu pozvánky
+mainMenu.servers.joinViaCode.error.expired = Tento kód pozvánky vypršel.
+mainMenu.servers.joinViaCode.error.failedToConnect = Nelze se připojit k žádné dostupné adrese.
+mainMenu.servers.joinViaCode.status.connecting = Testování kandidátů na připojení...
+
+mainMenu.servers.noFavoriteServers.title = Nebyly přidány žádné servery
+mainMenu.servers.noFavoriteServers.text = Můžete přidat server do svého seznamu kliknutím na „Přidat server” níže.
+mainMenu.servers.noLanServers.title = Nebyly nalezeny žádné servery
+mainMenu.servers.noLanServers.text = Zde se zobrazí servery, které lze najít ve stejné lokální síti.
+
+# Online Play Settings
+mainMenu.onlinePlay.title = Online hra
+mainMenu.onlinePlay.shareCode = Sdílet kód
+mainMenu.onlinePlay.shareCode.hintActive = Sdílejte tento kód se svými přáteli, aby se mohli připojit k vašemu světu pomocí možnosti „Připojit se pomocí kódu” v menu Servery.
+mainMenu.onlinePlay.shareCode.hintInactive = Zapněte „Povolit ostatním hráčům připojit se” a stiskněte Uložit, abyste získali kód sdílení.
+mainMenu.onlinePlay.shareCode.ipWarning = Varování: tento sdílený kód obsahuje vaši IP adresu. Sdílejte jej pouze s důvěryhodnými osobami.
+mainMenu.onlinePlay.shareCode.placeholder = Zatím není k dispozici žádný kód ke sdílení.
+mainMenu.onlinePlay.shareCode.copy = Kopírovat do schránky
+mainMenu.onlinePlay.setting.allowPlayers = Povolit ostatním hráčům připojit se
+mainMenu.onlinePlay.setting.password = Heslo
+mainMenu.onlinePlay.setting.password.placeholder = Žádné heslo
+mainMenu.onlinePlay.setting.includePasswordInCode = Zahrnout heslo do kódu sdílení
+mainMenu.onlinePlay.status.copiedToClipboard = Zkopírováno do schránky!
+mainMenu.onlinePlay.status.connecting = Navazování připojení... Může to trvat několik sekund.
+mainMenu.onlinePlay.status.connectedVia = Připojeno přes {method}
+mainMenu.onlinePlay.status.failed = Nelze navázat připojení. Zkuste to znovu nebo zkontrolujte nastavení firewallu.
+mainMenu.onlinePlay.natType = Typ NAT: {type}
+mainMenu.onlinePlay.natType.Unknown = Neznámý
+mainMenu.onlinePlay.natType.None = Bez NAT (přímo)
+mainMenu.onlinePlay.natType.NatWithUpnp = Standardní (UPnP)
+mainMenu.onlinePlay.natType.NatWithoutUpnp = Omezený (bez UPnP)
+mainMenu.onlinePlay.natType.DoubleNat = Dvojitý NAT
+mainMenu.onlinePlay.natType.CarrierGradeNat = Operátorský NAT (CGNAT)
+mainMenu.onlinePlay.connectionWarning = Varování: nastavení vaší sítě mohou bránit ostatním hráčům v připojení.
+mainMenu.onlinePlay.wipWarning = Toto je experimentální funkce, která do značné míry závisí na prostředí. Pokud to nefunguje, přečtěte si článek nápovědy na <u><a href="joining-friends">{url}</a></u>.
+
+mainMenu.servers.button.joinServer = Připojit se k serveru
+mainMenu.servers.button.editServer = Upravit server
+mainMenu.servers.button.addServer = Přidat server
+
+mainMenu.servers.editPopup.addServer = Přidat server
+mainMenu.servers.editPopup.editServer = Upravit server
+mainMenu.servers.editPopup.name = Jméno
+mainMenu.servers.editPopup.error.invalidAddress = Zadejte platnou adresu serveru.
+mainMenu.servers.editPopup.error.invalidName = Zadejte platné jméno serveru.
+
+mainMenu.servers.name = Jméno
+mainMenu.servers.description = Popis
+mainMenu.servers.online = Online
+mainMenu.servers.tags = Značky
+mainMenu.servers.rating = Hodnocení
+mainMenu.servers.ping = Ping
+
+mainMenu.servers.failedToFetch = Nelze získat seznam serverů.
+
+mainMenu.servers.details.host = Hostitel: {host}
+mainMenu.servers.details.languages = Podporované jazyky: {languages}
+mainMenu.servers.details.uuid = Universální unikátní identifikátor
+mainMenu.servers.details.online = Online: {online}
+mainMenu.servers.details.branch = Větev: {name}
+mainMenu.servers.details.favoriteYes = Oblíbený: Ano
+mainMenu.servers.details.favoriteNo = Oblíbený: Ne
+
+mainMenu.servers.offline.title = Multiplayer není dostupný
+mainMenu.servers.offline.description.offline = Jste v offline režimu.\n\
+    Chcete-li hrát v multiplayeru, restartujte hru v online režimu.
+mainMenu.servers.offline.description.connecting = Připojujeme se k serverům Hytale, zkuste to znovu za chvíli...
+mainMenu.servers.offline.description.unavailable = Multiplayer je aktuálně nedostupný, protože máme problémy s připojením k serverům Hytale. Zkuste to znovu později nebo restartujte hru.
+
+# Worlds
+
+mainMenu.worldType = {worldType} Svět
+mainMenu.worldTypes.adventure = Dobrodružství
+mainMenu.worldTypes.creative = Kreativní
+mainMenu.worldTypes.exploration = Průzkum
+
+mainMenu.worldCreation.creative.mainDescription = Uvolněte plný potenciál svého avatara a rozvíjejte své mistrovství díky výkonným kreativním nástrojům.
+mainMenu.worlds.creativeModeDescription = Uvolněte plný potenciál svého avatara a rozvíjejte své mistrovství díky výkonným kreativním nástrojům.
+mainMenu.worlds.selectWorld = Vybrat svět
+mainMenu.worlds.selectWorldAppendix = Vyberte uložený svět nebo začněte nový.
+mainMenu.worlds.editWorld = Upravit svět
+mainMenu.worlds.failedToDeleteWorld = Svět nelze odstranit.
+mainMenu.worlds.settings = Nastavení
+mainMenu.worlds.worldName = Jméno světa
+mainMenu.worlds.gamemode = Herní režim
+mainMenu.worlds.flatWorld = Plochý svět
+mainMenu.worlds.randomWorld = Náhodný svět
+mainMenu.worlds.creativeMode = Kreativní režim
+mainMenu.worlds.creativeModeStandard = Standardní
+mainMenu.worlds.creativeModeHub = Kreativní centrum
+mainMenu.worlds.creativeModeGenerated = [TMP] Generovaný svět
+mainMenu.worlds.npcSpawning = NPC spawnování
+mainMenu.worlds.noNpcSpawning = Žádné NPC
+mainMenu.worlds.deleteWorld = Smazat svět
+mainMenu.worlds.deleteWorldConfirmation = Opravdu chcete smazat svět „{name}”?
+mainMenu.worlds.openFolder = Otevřít složku
+mainMenu.worlds.createWorld = Vytvořit svět
+mainMenu.worlds.saveWorldSettings = Uložit globální nastavení
+mainMenu.worlds.newWorld = Nový svět
+mainMenu.worlds.worldOptions = Možnosti světa
+mainMenu.worlds.defaultWorldName = Nový svět
+mainMenu.worlds.defaultSettings = Výchozí nastavení
+mainMenu.worlds.customSettings = Vlastní nastavení
+mainMenu.worlds.settings.pvp = PvP
+mainMenu.worlds.settings.enabled = Zapnuto
+mainMenu.worlds.settings.disabled = Vypnuto
+mainMenu.worlds.settings.fallDamage = Poškození pádem
+mainMenu.worlds.settings.pauseTime = Pozastavit čas
+mainMenu.worlds.settings.dayNightCycle = [TMP] Cykl dne a noci
+mainMenu.worlds.settings.dayDuration = [TMP] Délka dne (sekundy)
+mainMenu.worlds.settings.nightDuration = [TMP] Délka noci (sekundy)
+mainMenu.worlds.settings.customTime = [TMP] Vlastní čas
+mainMenu.worlds.settings.applyWorldSettings = Použít nastavení
+mainMenu.worlds.settings.restoreSettings = Obnovit výchozí
+mainMenu.worlds.settings.deathPenalty = [TMP] Trest inventáře při smrti
+mainMenu.worlds.settings.deathPenalty.tooltip = [TMP] Určuje trest inventáře, který bude uplatněn po smrti hráče.\n\
+<b><color is="#f1ba50">Žádný</color></b>: Hráč neztratí žádné předměty při smrti.\n\
+<b><color is="#f1ba50">Ztratit vše</color></b>: Po smrti hráč ztratí všechny předměty ze svého inventáře.\n\
+<b><color is="#f1ba50">Částečná ztráta</color></b>: Hráč ztratí pouze určité množství předmětů, které mají spadnout po smrti.
+mainMenu.worlds.settings.resourceLoss = [TMP] Procento ztráty zdrojů po smrti
+mainMenu.worlds.settings.durabilityLoss = [TMP] Procento ztráty odolnosti po smrti
+mainMenu.worlds.settings.deathPenaltyNone = [TMP] Žádný
+mainMenu.worlds.settings.deathPenaltyDropAll = [TMP] Ztratit vše
+mainMenu.worlds.settings.deathPenaltyPartial = [TMP] Částečná ztráta
+
+mainMenu.worlds.adventureMode.wip.text = [Nedostupné v raném přístupu]
+mainMenu.worlds.exploartionMode.wip.text = [Náhled raného přístupu]
+mainMenu.worlds.explorationModeDescription = Prozkoumejte Echo Orbisu. Stavte, tvořte, přežijte a najděte způsob, jak obnovit to, co bylo ztraceno.
+mainMenu.worlds.worldDoesntExist.title = Neznámý svět
+mainMenu.worlds.worldDoesntExist.message = Svět, který jste chtěli otevřít, neexistuje.
+mainMenu.worlds.noModsFound = Nebyly nalezeny žádné mody.
+mainMenu.worlds.mods = Mody
+mainMenu.worlds.modType.pack = Balíček
+mainMenu.worlds.modType.plugin = Plugin
+
+mainMenu.assetEditor.errorModal.missingDirectory.title = Vybrat adresář
+mainMenu.assetEditor.errorModal.missingDirectory.text = Před použitím editoru assetů musíte nastavit cestu k assetům.
+mainMenu.assetEditor.errorModal.invalidDirectory.title = Neplatný adresář
+mainMenu.assetEditor.errorModal.invalidDirectory.text = Adresář vybraný pro editor assetů se nezdá být platným adresářem assetů. Jsou vyžadovány složky Common a Server.
+mainMenu.assetEditor.errorModal.openSettingsButton = Otevřít nastavení
+
+# Early Access Panel
+mainMenu.earlyAccessPanel.title = Raný přístup\nUpozornění
+mainMenu.earlyAccessPanel.text = Toto je raný přístup k Hytale; Hra je stále ve fázi aktivního vývoje. V průběhu práce na plné verzi se mohou objevit chyby a změny.\n\nDěkujeme za podporu!
+# === map ===
+map.title = Mapa světa
+
+map.contextMenu.teleport = Teleportovat
+map.contextMenu.selectLocation = Vybrat lokaci
+map.contextMenu.deselectLocation = Zrušit výběr lokace
+map.contextMenu.removeMarker = Odebrat značku
+
+map.disabled = Neznámá lokace
+
+map.actions.placeMarker = Umístit značku
+map.actions.zoom = Přiblížit/oddálit
+map.actions.playerList = Seznam hráčů
+
+map.playerList.playerCount = ({players, number})
+map.playerList.playerCountWithMax = ({players, number}/{maxPlayers, number})
+map.playerList.worldOnly = Sám na světě
+map.playerList.titleWorld = Hráči na světě
+map.playerList.titleServer = Hráči na serveru
+map.playerList.inWorld = Tento hráč je ve vašem světě.
+
+map.marker.localPlayer = Vy
+map.marker.targetLocation = Cílová lokace
+# === mediaBrowser ===
+mediaBrowser.popularVideos = Populární videa
+mediaBrowser.popularStreams = Populární streamy
+mediaBrowser.search = Hledat „{query}”
+mediaBrowser.currentlyPlaying = Právě se přehrává
+mediaBrowser.live = Živé
+
+mediaBrowser.youtube.errors.unreachable = Nelze se připojit k YouTube.
+mediaBrowser.youtube.errors.requestFailed = Nepodařilo se načíst data z YouTube.
+
+# === menuOverlay ===
+menuOverlay.buttons.returnToGame = Vrátit se do hry
+menuOverlay.buttons.quitToDesktop = Odejít na plochu
+menuOverlay.buttons.quitToMainMenu = Odejít do hlavního menu
+menuOverlay.buttons.codex = Kódex
+menuOverlay.buttons.settings = Nastavení
+menuOverlay.buttons.feedback = Odeslat chybu nebo zpětnou vazbu
+menuOverlay.buttons.onlinePlay = Online hra
+
+# === myAvatar ===
+myAvatar.button.resetOptions = Resetovat avatar
+myAvatar.button.resetClothing = Resetovat oblečení
+myAvatar.button.randomize = Náhodné možnosti
+myAvatar.button.undo = Vrátit poslední změnu
+myAvatar.button.redo = Zopakovat poslední změnu
+myAvatar.button.playEmote = Přehrát emoci
+
+myAvatar.playEmotePopup.title = Přehrát emoci
+
+myAvatar.title = Přizpůsobit avatar
+
+myAvatar.lockProperty = Klikněte pro zabránění změny této vlastnosti při použití tlačítka Náhodně.
+myAvatar.unlockProperty = Klikněte pro povolení úpravy této vlastnosti při použití tlačítka Náhodně.
+
+myAvatar.synchronizeHairColor.enable = Klikněte pro zajištění automatického přizpůsobení barev vlasů.
+myAvatar.synchronizeHairColor.disable = Klikněte pro zastavení automatického přizpůsobení barvy vlasů.
+
+myAvatar.tabs.General = Obecné
+myAvatar.tabs.Head = Hlava
+myAvatar.tabs.BodyCharacteristic = Charakteristika těla
+myAvatar.tabs.Underwear = Spodní prádlo
+myAvatar.tabs.Torso = Trup
+myAvatar.tabs.Capes = Pláště
+myAvatar.tabs.Legs = Nohy
+myAvatar.tabs.FacialHair = Vousy
+myAvatar.tabs.Eyebrows = Obroučky
+myAvatar.tabs.Face = Obličej
+myAvatar.tabs.Ears = Uši
+myAvatar.tabs.Mouth = Ústa
+myAvatar.tabs.Eyes = Oči
+myAvatar.tabs.Haircut = Vlasy
+myAvatar.tabs.Pants = Kalhoty
+myAvatar.tabs.Overpants = Přes kalhoty
+myAvatar.tabs.Undertop = Spodní vrstva
+myAvatar.tabs.Overtop = Vrchní vrstva
+myAvatar.tabs.Shoes = Boty
+myAvatar.tabs.SkinFeature = Charakteristika kůže
+myAvatar.tabs.HeadAccessory = Příslušenství hlavy
+myAvatar.tabs.FaceAccessory = Příslušenství obličeje
+myAvatar.tabs.EarAccessory = Příslušenství uší
+myAvatar.tabs.Gloves = Rukavice
+myAvatar.tabs.Cape = Plášť
+myAvatar.tabs.Emotes = Emoce
+
+myAvatar.baseProperties.bodyType = Typ těla
+myAvatar.baseProperties.skinTone = Tón pleti
+myAvatar.baseProperties.options = Možnosti
+
+myAvatar.baseProperties.bodyTypes.masculine = Mužský
+myAvatar.baseProperties.bodyTypes.feminine = Ženský
+
+myAvatar.color = Barva
+
+myAvatar.variant = Varianta
+
+myAvatar.dropdown.filterBy = Filtrovat podle:
+
+myAvatar.lockedCosmetics = Zamčené kosmetiky
+
+myAvatar.unsavedChangesDialog.title = Neuložené změny
+myAvatar.unsavedChangesDialog.text = Provedli jste změny ve svém avataru, které ještě nebyly uloženy.
+
+myAvatar.lockedCosmeticDialog.title = Vybraný kosmetik je zamčený
+myAvatar.lockedCosmeticDialog.text = Vybrali jste kosmetik, který vyžaduje speciální edici.\n\nMůžete vrátit tento výběr zpět na poslední platný výběr nebo\nupravit svůj výběr pro výběr jiného kosmetiku.
+myAvatar.lockedCosmeticDialog.undoButton = Vrátit výběr
+myAvatar.lockedCosmeticDialog.editButton = Upravit výběr
+
+myAvatar.failedToSaveDialog.title = Nepodařilo se uložit avatar!
+myAvatar.failedToSaveDialog.text = Aktuálně máme problémy s uložením vašeho avatara.\n\nZkuste to znovu později.
+myAvatar.failedToSaveDialog.button.tryAgain = Zkusit znovu nyní
+myAvatar.failedToSaveDialog.button.ok = OK.
+
+myAvatar.entitlement.gameFounder.titleSuffix = Exkluzivní edice Cursebreaker
+myAvatar.entitlement.gameFounder.lockedMessage = Chcete-li použít tento kosmetik, potřebujete edici Cursebreaker.
+myAvatar.entitlement.gameFounder.description = Tato část je dostupná pouze v edici Cursebreaker Hytale. Odemkněte ji aktualizací své současné edice v obchodě Hytale.
+
+myAvatar.entitlement.gameDeluxe.titleSuffix = Exkluzivní edice pro fanoušky
+myAvatar.entitlement.gameDeluxe.lockedMessage = [TMP] Chcete-li použít tento kosmetik, potřebujete edici Supporter.
+myAvatar.entitlement.gameDeluxe.description = Tato část je dostupná pouze v edici Supporter Hytale. Odemkněte ji aktualizací své současné edice v obchodě Hytale.
+
+myAvatar.entitlement.gameStandard.titleSuffix = Exkluzivní standardní edice s raným přístupem
+myAvatar.entitlement.gameStandard.lockedMessage = [TMP] Chcete-li použít tento kosmetik, potřebujete standardní edici Early Access.
+myAvatar.entitlement.gameStandard.description = Tato část je dostupná pouze ve standardní edici Hytale Early Access. Odemkněte ji aktualizací své současné edice v obchodě Hytale.
+
+myAvatar.entitlement.default.lockedMessage = Nemůžete použít tento kosmetik, protože je zamčený.
+
+myAvatar.offline.title = Kreator avatarů není dostupný
+myAvatar.offline.description.offline = Jste v offline režimu.\nChcete-li použít kreator avatarů, restartujte hru v online režimu.
+myAvatar.offline.description.connecting = Připojujeme se k serverům Hytale, zkuste to znovu za chvíli...
+myAvatar.offline.description.unavailable = Kreator avatarů je aktuálně nedostupný, protože máme problémy s připojením k serverům Hytale. Zkuste to znovu později nebo restartujte hru.
+
+# === settings ===
+settings.title = Nastavení
+
+settings.tabs.general = Obecné
+settings.tabs.video = Video
+settings.tabs.audio = Audio
+settings.tabs.mouse = Myš
+settings.tabs.controls = Ovládání
+settings.tabs.gameplay = Hratelnost
+settings.tabs.prototype = Prototyp
+
+settings.groups.mouse = Myš
+settings.groups.audioOutput = Výstup
+settings.groups.general = Obecné
+settings.groups.gameplay = Hratelnost
+settings.groups.rendering = Renderování
+settings.groups.advancedRendering = Pokročilé renderování
+settings.groups.ui = UI
+settings.groups.development = Vývoj
+settings.groups.language = Jazyk
+settings.groups.options = Možnosti
+settings.groups.controls.movement = Pohyb
+settings.groups.controls.actions = Akce
+settings.groups.controls.creative = Kreativní
+settings.groups.controls.menus = Menu
+settings.groups.controls.blockPlacement = Umístění bloku
+settings.groups.controls.builderTools = Nástroje stavitele
+settings.groups.controls.misc = Různé
+settings.groups.controls.debug = Ladění
+settings.groups.builderTools = Nástroje stavitele
+settings.groups.movement = Pohyb
+settings.groups.mantling = Plášť
+settings.groups.camera = Kamera
+settings.groups.sprint = Sprint
+settings.groups.slide = Klouzání
+settings.groups.stamina = Výdrž
+settings.groups.weaponPullback = Zpětný tah zbraně
+settings.groups.entityui = UI entity
+settings.groups.playselect = Nástroj výběru hry
+settings.groups.playpaint = Nástroj malování hry
+settings.groups.paint = Malování
+settings.groups.debug = Ladění
+settings.groups.mounts = Mounty
+settings.groups.creativeMode = Kreativní režim
+settings.groups.pickupLocations = Preferované místa vyzvednutí
+settings.groups.accessibility = Přístupnost
+
+settings.percentagePlayGizmoLength = Procentní šířka renderování Gizma
+settings.minPlaySelectGizmoSize = Minimální velikost gizma
+settings.maxPlaySelectGizmoSize = Maximální velikost gizma
+
+settings.paintOperationIgnoreHistoryLength = Délka historie ignorování hry v Paint
+
+# Quick Settings Categories
+settings.category.movementFlight = Pohyb a let
+settings.category.placementSettings = Nastavení umístění
+settings.category.toolSettings = Nastavení nástrojů
+settings.category.brushSettings = Nastavení štětce
+settings.category.soundSettings = Nastavení zvuku
+settings.category.selectionSettings = Nastavení výběru
+settings.category.uiVisibility = Viditelnost UI
+settings.category.displayNotifications = Displej a notifikace
+
+# Quick Settings Labels
+settings.noClip = Bez kolize
+settings.flightMode = Režim letu
+settings.flightMode.hover = Vznášet se
+settings.flightMode.directional = Směrový
+settings.flightInertia = Setrvačnost letu
+settings.flightSpeedMultiplier = Násobitel rychlosti pohybu
+settings.airPlacement = Umístění ve vzduchu
+settings.allowNPCDetection = Povolit detekci NPC
+settings.respondToHit = Reagovat na zásah
+settings.toolReachDistance = Dosah nástroje
+settings.toolDelayMin = Minimální zpoždění nástroje
+settings.brushOpacity = Krytí štětce
+settings.enableBrushShapeRendering = Povolit renderování tvaru štětce
+settings.brushSoundsEnabled = Zvuky štětce
+settings.brushSoundVolume = Hlasitost zvuku štětce
+settings.selectionOpacity = Krytí výběru
+settings.selectionPanelOpacity = Krytí panelu výběru
+settings.displayLegend = Legenda displeje
+settings.showToolNotifications = Zobrazit notifikace nástrojů
+settings.laserPointerColor = Barva laserového ukazatele
+settings.laserPointerColor.description = Výchozí hexadecimální barva nástroje laserového ukazatele.
+settings.fullbright = Plná jasnost
+
+# Quick Settings UI
+settings.dragToReorder = Přetáhněte pro změnu pořadí
+settings.resetToDefaults = Resetovat na výchozí
+settings.resetToDefaults.tooltip = Resetovat všechna rychlá nastavení na výchozí hodnoty.
+
+settings.resetOptions = Resetovat možnosti
+settings.useSystemLanguage = Použít systémový jazyk
+settings.language = Jazyk
+settings.language.description = Nastavuje jazyk zobrazený ve hře.
+settings.fullscreen = Celá obrazovka
+settings.noAuthName = Žádné autorizační jméno
+settings.resolution = Rozlišení
+settings.windowSize = Velikost okna
+settings.windowResize = Vybrat pro změnu velikosti
+settings.customResolution = Vlastní ({size})
+settings.graphicsPreset = Předvolba grafiky
+settings.graphicsPreset.low = Nízká
+settings.graphicsPreset.low.description = Upřednostnit výkon před věrností.
+settings.graphicsPreset.medium = Střední
+settings.graphicsPreset.medium.description = Vyvážení mezi věrností a výkonem.
+settings.graphicsPreset.high = Vysoká
+settings.graphicsPreset.high.description = Upřednostnit věrnost před výkonem.
+settings.graphicsPreset.epic = Epická
+settings.graphicsPreset.epic.description = Kvalita na prvním místě.
+settings.graphicsPreset.custom = Vlastní
+settings.maximized = Maximalizované
+settings.vsync = Vertikální synchronizace
+settings.vsync.description = Zapnutí V-Sync omezí počet snímků za sekundu na obnovovací frekvenci monitoru.
+settings.fpsLimit = Limit FPS
+settings.unlimitedFps = Neomezené FPS
+settings.viewDistance = Vzdálenost pohledu
+settings.viewDistance.description = Vzdálenost pohledu určuje, jak daleko vidíte.
+settings.viewDistance.performanceWarning = Doporučeno: 64 GB RAM a 16 GB VRAM.
+settings.fieldOfView = Pole vidění
+settings.sprintFovEffect = Efekt FOV sprintu
+settings.sprintFovIntensity = Intenzita pole vidění při sprintu
+settings.viewBobbingEffect = Efekt kývání pohledu
+settings.viewBobbingIntensity = Intenzita kývání pohledu
+settings.cameraShakeEffect = Efekt otřesu kamery
+settings.firstPersonCameraShakeIntensity = Intenzita otřesu kamery v první osobě
+settings.thirdPersonCameraShakeIntensity = Intenzita otřesu kamery ve třetí osobě
+settings.creativeInteractionDistance = Kreativní vzdálenost interakce
+settings.adventureInteractionDistance = Obecná vzdálenost interakce
+settings.gizmoScaleMultiplier = Měřítko UI nástroje Rotace/překlad Gizmo
+settings.laserPointerColor = Výchozí barva laserového ukazatele
+settings.laserPointerColor.description = Výchozí hexadecimální barva nástroje laserového ukazatele (například #3CFAE6).
+settings.useBlockSubfaces = Použít blokující podpovrchy
+settings.displayBlockSubfaces = Zobrazit podpovrchy bloků
+settings.displayBlockBoundaries = Zobrazit hranice bloků
+settings.placeBlocksAtRange = Umístit bloky na vzdálenost
+settings.placeBlocksAtRangeInAdventureMode = ---> Ukončit kreativní režim
+settings.blockPlacementSupportValidation = Ověření podpory pro umístění bloků
+settings.blockPlacementFluidity = Plynulost umístění kreativních bloků
+settings.resetMouseSensitivityDuration = Čas na obnovení plné citlivosti myši.
+settings.automaticRenderScale = Automatické škálování vykreslování
+settings.automaticRenderScale.description = Určuje, zda automaticky nastavit škálu vykreslování na základě grafického procesoru.
+settings.renderScale = Škála vykreslování
+settings.renderScale.description = Procento rozlišení obrazovky, ve kterém bude hra vykreslována.
+settings.placementPreview = Blokovat náhled umístění
+settings.placementPreview.description = Určuje, pro jaké typy bloků bude zobrazen náhled umístění (když držíte blok v ruce).\n\
+<b><color is="#f1ba50">Žádný</color></b>: Náhled nebude nikdy zobrazen.\n\
+<b><color is="#f1ba50">Všechny</color></b>: Bude zobrazen náhled jakéhokoli bloku.\n\
+<b><color is="#f1ba50">Vícedílný</color></b>: Náhled bude zobrazen pouze pro bloky větší než jeden blok.
+settings.placementPreview.none = Žádný
+settings.placementPreview.all = Všechny
+settings.placementPreview.multipart = Vícedílný
+settings.displayCombatText = Zobrazit údaje o poškození
+settings.displayCombatText.description = Určuje, zda zobrazit prvky jako počet poškození, když je to povoleno serverem. Pokud server tuto funkci zakáže, bojový text nebude zobrazen bez ohledu na toto nastavení.
+settings.displayEntityStatBars = Zobrazit stavové lišty entity
+settings.displayEntityStatBars.description = Určuje, zda bude zobrazen stavový pruh UI (tj. zdraví) nad entitami, pokud je povolen serverem. Pokud server tuto funkci zakáže, stavové lišty nebudou zobrazeny bez ohledu na toto nastavení.
+settings.displayNetworkQualityWarnings = Zobrazit varování kvality sítě
+settings.displayNetworkQualityWarnings.description = Určuje, zda zobrazit ikony varování kvality sítě na HUD.
+settings.displayInputBindingsOnHud = Zobrazit vstupní vazby na HUD
+settings.displayInputBindingsOnHud.description = Určuje, zda zobrazit kontextové klávesy na HUD.
+settings.hideHud = Skrýt HUD
+settings.hideHud.description = Skrýt všechny prvky HUD.
+settings.hideHotbar = Skrýt rychlý panel
+settings.hideHotbar.description = Skrýt rychlý panel a související prvky.
+settings.hideCompass = Skrýt kompas
+settings.hideCompass.description = Skryj kompas.
+settings.hideNotifications = Skryj oznámení
+settings.hideNotifications.description = Skryj vyskakovací oznámení.
+settings.hideChat = Skryj chat
+settings.hideChat.description = Skryj okno chatu (nebrání přijímání zpráv).
+settings.hideHeldItem = Skryj držený předmět
+settings.hideHeldItem.description = Skryj předmět v ruce (pohled z první osoby).
+settings.maxChatMessages = Maximální počet zpráv v chatu
+settings.maxChatMessages.description = Určuje maximální počet zpráv uchovávaných v seznamu konverzací.
+settings.cameraBasedFlying = Let podle kamery
+settings.cameraBasedFlying.description = Určuje chování letu.
+<b><color is="#f1ba50">Zapnuto</color></b>: Pohyb bude záviset na směru pohledu.\n\
+<b><color is="#f1ba50">Vypnuto</color></b>: Pohyb bude vždy stejný bez ohledu na směr pohledu.
+settings.showToolNotifications = Zobrazit oznámení o nástrojích
+settings.cameraShoulder = Kamera na rameni
+settings.cameraShoulder.left = Vlevo
+settings.cameraShoulder.right = Vpravo
+settings.cameraShoulder.description = Nastav, na které rameno se dívat ve třetí osobě.
+
+settings.lod = Úroveň detailů světa
+settings.lod.lowest = Nejnižší
+settings.lod.low = Nízká
+settings.lod.medium = Střední
+settings.lod.high = Vysoká
+settings.lod.maximum = Maximální
+settings.lod.description = Ovládá úroveň detailů světa. Vyšší nastavení zlepšuje vykreslování vzdálených objektů, ale výrazně snižuje výkon.
+settings.antialiasing = Vyhlazování hran
+settings.antialiasing.description = Zjemňuje hrany geometrie pro lepší kvalitu obrazu. Při použití nižšího měřítka vykreslování se doporučuje kvalitní anti-aliasing.
+settings.antialiasing.off = Vypnuto
+settings.antialiasing.fxaa = Nízké (FXAA)
+settings.antialiasing.taa = Vysoké (TAA)
+settings.shaderQuality = Kvalita shaderů
+settings.shaderQuality.low = Nízká
+settings.shaderQuality.medium = Střední
+settings.shaderQuality.high = Vysoká
+settings.shaderQuality.description = Rozlišení používané pro světelné a stínové efekty.
+settings.bloomQuality = Bloom
+settings.bloomQuality.off = Vypnuto
+settings.bloomQuality.low = Nízký
+settings.bloomQuality.medium = Střední
+settings.bloomQuality.high = Vysoký
+settings.bloomQuality.description = Bloom přidává efekt záře kolem intenzivních světelných zdrojů. Vyšší nastavení zlepšuje kvalitu efektu, nikoli jeho intenzitu.
+settings.dofQuality = Hloubka ostrosti
+settings.dofQuality.off = Vypnuto
+settings.dofQuality.low = Nízká
+settings.dofQuality.medium = Střední
+settings.dofQuality.high = Vysoká
+settings.dofQuality.description = Rozmazává vzdálené objekty.
+settings.useSunshaft = Sluneční paprsky
+settings.useSunshaft.description = Zobrazuje sluneční paprsky pronikající skrz listí.
+settings.useFoliageFading = Postupné miznutí listí
+settings.useFoliageFading.description = Umožňuje vzdálené miznutí listí pro lepší výkon a snížení blikání.
+settings.shadowQuality = Kvalita stínů
+settings.shadowQuality.low = Nízká
+settings.shadowQuality.medium = Střední
+settings.shadowQuality.high = Vysoká
+settings.shadowQuality.description = Ovládá kvalitu dynamických stínů a jejich frekvenci aktualizace.
+settings.particleQuality = Kvalita částic
+settings.particleQuality.medium = Střední
+settings.particleQuality.high = Vysoká
+settings.particleQuality.description = Ovládá kvalitu a hustotu částicových efektů.
+settings.depthBuffer = Přesnost hloubkového bufferu
+settings.depthBuffer.low = Nízká
+settings.depthBuffer.high = Vysoká
+settings.depthBuffer.description = Ovládá přesnost hloubky vykreslovaného obrazu. Vyšší přesnost může snížit blikání vzdálených objektů.
+
+settings.joinCameraPref = Preferovaný pohled kamery (pokud je zobrazen)
+settings.joinCameraPref.description = Jaký pohled kamery preferuješ při vstupu do světa?
+Servery mohou toto nastavení přepsat!
+settings.joinCameraPref.first = První osoba
+settings.joinCameraPref.third = Třetí osoba
+settings.joinCameraPref.lastUsed = Zapamatovat poslední použití
+
+settings.diagnosticMode = Diagnostický režim
+settings.diagnosticMode.description = Pokud plánuješ tvorbu obsahu, doporučuje se zapnout diagnostický režim. Ten zobrazí více chybových hlášení o špatně nakonfigurovaném obsahu.
+
+settings.useBlockyModelShaderWorkaround = Alternativní řešení pro blokové modely
+settings.useBlockyModelShaderWorkaround.description = Na některých počítačích Mac s grafikou NVIDIA je bez tohoto řešení vykreslování velmi pomalé. Pro projevení změny je nutné restartovat hru.
+
+settings.mouseRawInputMode = Režim surového vstupu
+settings.mouseInverted = Invertovaná myš
+settings.mouseXSpeed = Rychlost myši / horizontálně
+settings.mouseYSpeed = Rychlost myši / vertikálně
+settings.invertMouseWheelScrollDirection = Invertovat směr kolečka myši
+settings.invertMouseWheelScrollDirection.description = Invertuje směr otáčení kolečka myši (často používané při změně pozic na liště rychlého přístupu).
+settings.outputDevice = Výstupní zařízení
+settings.masterVolume = Hlavní hlasitost
+settings.musicVolume = Hlasitost hudby
+settings.sfxVolume = Hlasitost efektů
+settings.ambientVolume = Hlasitost okolních zvuků
+settings.uiVolume = Hlasitost uživatelského rozhraní
+settings.outputMode = Výstupní režim
+settings.outputMode.description = Řídí nastavení zvukového výstupního kanálu.\n\
+<b><color is="#f1ba50">Výchozí</color></b>: Automaticky vybere nejlepší možnost pro zvolené výstupní zařízení.
+settings.outputMode.default = Výchozí
+settings.outputMode.stereo = Stereo (reproduktory)
+settings.outputMode.stereoHrtf = Stereo (sluchátka)
+settings.outputMode.mono = Mono
+settings.dynamicUiScaling = Dynamické škálování uživatelského rozhraní
+settings.uiScale = Měřítko uživatelského rozhraní
+
+settings.defaultAudioDevice = Výchozí
+
+settings.bindingPopup.bind = Zadej „{binding}“.
+settings.bindingPopup.pressKey = Stiskni libovolnou klávesu nebo Esc pro zrušení.
+settings.bindings.clear = Odebrat aktuální kombinaci kláves.
+
+settings.bindings.MoveForwards = Pohyb vpřed
+settings.bindings.MoveBackwards = Pohyb vzad
+settings.bindings.StrafeLeft = Pohyb doleva
+settings.bindings.StrafeRight = Pohyb doprava
+settings.bindings.Jump = Skok
+settings.bindings.Crouch = Dřep / Skluz / Přemet
+settings.bindings.Crouch.description = <b>Skluz</b>: Stiskni tuto klávesu během běhu pro provedení skluzu.\n<b>Přemet</b>: Stiskni tuto klávesu pro provedení přemetu.
+settings.bindings.Sprint = Sprint
+settings.bindings.FlyUp = Let nahoru
+settings.bindings.FlyDown = Let dolů
+settings.bindings.Walk = Chůze
+settings.bindings.Chat = Přepnout chat
+settings.bindings.ShowPlayerList = Zobrazit seznam hráčů
+settings.bindings.OpenInventory = Otevřít inventář
+settings.bindings.OpenMap = Otevřít mapu
+settings.bindings.OpenDevTools = Otevřít vývojářské nástroje
+settings.bindings.DropItem = Zahodit předmět
+settings.bindings.ShowUtilitySlotSelector = Zobrazit výběr nástrojového slotu
+settings.bindings.ToggleBuilderToolsLegend = Přepnout legendu stavebních nástrojů
+settings.bindings.OpenToolsSettings = Otevřít nastavení kreativních nástrojů
+
+settings.bindings.ToolPaintBrush = Nástroj: malovací štětec
+settings.bindings.ToolSculptBrush = Nástroj: sochařský štětec
+settings.bindings.ToolSelectionTool = Nástroj výběru
+settings.bindings.ToolPaste = Nástroj vložení
+settings.bindings.ToolLine = Nástroj čára
+
+settings.bindings.SwitchCameraMode = Změnit režim kamery
+settings.bindings.ActivateCameraRotation = Aktivovat otáčení kamery
+settings.bindings.ToggleProfiling = Přepnout profilování
+settings.bindings.SwitchHudVisibility = Změnit viditelnost HUD
+settings.bindings.ToggleFullscreen = Přepnout režim celé obrazovky
+settings.bindings.Command = Příkaz
+settings.bindings.Command.description = Stisknutím otevřeš chat s předvyplněným znakem „/“ pro zadání serverového příkazu. Seznam příkazů je dostupný po zadání /help.
+settings.bindings.TakeScreenshot = Pořídit snímek obrazovky
+settings.bindings.IncreaseSpeedMultiplier = Zvýšit násobič rychlosti
+settings.bindings.DecreaseSpeedMultiplier = Snížit násobič rychlosti
+settings.bindings.ToggleCreativeCollision = Přepnout kolize v kreativním režimu
+settings.bindings.ToggleFlyCamera = Přepnout létající kameru
+settings.bindings.ToggleDebugScreens = Přepnout ladicí obrazovky
+
+settings.bindings.BlockInteractAction = Interakce s blokem
+settings.bindings.RotateBlock = Otočit blok
+settings.bindings.PrimaryItemAction = Primární akce
+settings.bindings.SecondaryItemAction = Sekundární akce
+settings.bindings.TertiaryItemAction = Terciární akce
+settings.bindings.PickBlock = Vybrat blok
+settings.bindings.SwitchGameMode = Změnit herní režim
+settings.bindings.ToggleBlockPreview = Přepnout náhled bloku
+settings.bindings.OpenMachinimaEditor = Otevřít editor Machinima
+settings.bindings.OpenBuilderToolsUI = Otevřít rozhraní nástrojů konstruktora
+settings.bindings.HotbarSlot1 = Rychlá lišta 1
+settings.bindings.HotbarSlot2 = Rychlá lišta 2
+settings.bindings.HotbarSlot3 = Rychlá lišta 3
+settings.bindings.HotbarSlot4 = Rychlá lišta 4
+settings.bindings.HotbarSlot5 = Rychlá lišta 5
+settings.bindings.HotbarSlot6 = Rychlá lišta 6
+settings.bindings.HotbarSlot7 = Rychlá lišta 7
+settings.bindings.HotbarSlot8 = Rychlá lišta 8
+settings.bindings.HotbarSlot9 = Rychlá lišta 9
+settings.bindings.Ability1ItemAction = Použít schopnost 1
+settings.bindings.Ability2ItemAction = Použít schopnost 2
+settings.bindings.Ability3ItemAction = Použít schopnost 3
+settings.bindings.UndoItemAction = Zpět
+settings.bindings.RedoItemAction = Znovu
+settings.bindings.AddRemoveFavoriteMaterialItemAction = Přidat / odebrat oblíbený materiál
+settings.bindings.DismountAction = Sesednout / nasednout
+settings.bindings.AlternatePlaySculptBrushModeModifier = Změnit modifikátor sochařského štětce
+settings.bindings.UsePaintModeForBrush = Použít režim malování pro štětec
+settings.bindings.SelectBlockFromSet = Vybrat blok ze sady
+settings.bindings.PastePreview = Vložit náhled
+settings.bindings.ToggleFlyCameraControlTarget = Přepnout cíl ovládání létající kamery
+settings.bindings.ToggleFlyCameraControlTarget.description = Přepíná cíl ovládaný létající kamerou, ať už jde o samotnou kameru nebo hráče.
+settings.bindings.PreviousBuilderToolsLegendPage = Legenda – předchozí stránka
+settings.bindings.NextBuilderToolsLegendPage = Legenda – další stránka
+
+settings.autoJumpObstacle = Automatický skok
+settings.autoJumpObstacle.description = Po zapnutí tohoto nastavení budeš automaticky překračovat bloky o maximální výšce 1 jednotky.
+settings.enableUtilityQuickSwap = Povolit rychlé přepínání nástrojů
+settings.enableUtilityQuickSwap.description = Po zapnutí stisknutí přiřazené klávesy okamžitě přepne na další položku na kole nástrojů.
+settings.enableArachnophobiaMode = Povolit režim arachnofobie
+settings.enableArachnophobiaMode.description = Po zapnutí budou pavouci nahrazeni jiným modelem (výchozím modelem serveru je krab).\n\n<b><color is="#b32626">Toto nastavení vyžaduje návrat do hlavního menu, aby se projevilo!</color></b>
+settings.autoJumpGap = Automaticky přeskakovat mezery
+settings.builderMode = Režim konstruktora
+settings.builderMode.tooltip = Po zapnutí A ZÁROVEŇ v kreativním režimu vypne některé funkce (např. efekty upuštění, pohyby hlavy apod.).
+
+settings.mantling = Zapnout / vypnout přelézání
+settings.minVelocityMantling = Minimální rychlost Y pro přelézání
+settings.maxVelocityMantling = Maximální rychlost Y pro přelézání
+settings.jumpForceSpeedMultiplierStep = Síla skoku přidaná při každém zvýšení úrovně rychlosti
+settings.maxJumpForceSpeedMultiplier = Maximální přidaná hodnota síly skoku
+settings.mantlingCameraOffsetY = Posun kamery Y při přelézání
+settings.mantleBlockHeight = Výška bloku pro přelézání
+
+settings.sprintForce = Síla sprintu
+settings.sprintAccelerationDuration = Doba trvání zrychlení
+settings.sprintDecelerationDuration = Doba zpomalování
+settings.sprintAccelerationEasingType = Typ vyhlazení zrychlení
+settings.sprintDecelerationEasingType = Typ vyhlazení zpomalování
+
+settings.slideDecelerationEasingType = Typ vyhlazení zpomalování
+settings.slideDecelerationDuration = Doba zpomalování
+
+settings.staminaLowAlertPercent = Prahová hodnota upozornění na nízkou výdrž
+settings.staminaDebugInfo = Zobrazit ladicí informace o výdrži
+
+settings.weaponPullback = Zpětné stažení zbraně
+settings.itemAnimationsClipGeometry = Ořez geometrie animací předmětů (na animaci)
+settings.itemsClipGeometry = Ořez geometrie předmětů (na předmět)
+settings.overrideFirstPersonAnimations = Použít přepisovací animace z pohledu první osoby
+
+settings.showEntityMarkers = Zobrazit značky entit
+
+settings.entityUIMaxEntities = Maximální počet entit
+settings.entityUIMaxDistance = Maximální vzdálenost
+settings.entityUIHideDelay = Zpoždění skrytí
+settings.entityUIFadeInDuration = Doba zobrazení (fade-in)
+settings.entityUIFadeOutDuration = Doba skrytí (fade-out)
+
+settings.mountMinTurnRate = Minimální rychlost otáčení
+settings.mountMinTurnRate.tooltip = Minimální rychlost, jakou se může držák/úchyt otáčet (stupně za sekundu).
+settings.mountMaxTurnRate = Maximální rychlost otáčení
+settings.mountMaxTurnRate.tooltip = Maximální rychlost, jakou se může držák/úchyt otáčet (stupně za sekundu).
+settings.mountSpeedMinTurnRate = Minimální rychlost otáčení
+settings.mountSpeedMinTurnRate.tooltip = Od této rychlosti a výše se použije minimální rychlost otáčení (vyšší rychlost = pomalejší otáčení).
+settings.mountSpeedMaxTurnRate = Maximální rychlost otáčení
+settings.mountSpeedMaxTurnRate.tooltip = Od této rychlosti a níže se použije maximální rychlost otáčení (vyšší rychlost = pomalejší otáčení).
+settings.mountForwardsAccelerationEasingType = Typ vyhlazení zrychlení vpřed
+settings.mountForwardsAccelerationEasingType.tooltip = Vyhlazovací křivka používaná při zrychlování vpřed.
+settings.mountForwardsDecelerationEasingType = Typ vyhlazení zpomalování vpřed
+settings.mountForwardsDecelerationEasingType.tooltip = Vyhlazovací křivka používaná při zpomalování vpřed.
+settings.mountBackwardsAccelerationEasingType = Typ vyhlazení zrychlení vzad
+settings.mountBackwardsAccelerationEasingType.tooltip = Vyhlazovací křivka používaná při zrychlování vzad.
+settings.mountBackwardsDecelerationEasingType = Typ vyhlazení zpomalování vzad
+settings.mountBackwardsDecelerationEasingType.tooltip = Vyhlazovací křivka používaná při zpomalování vzad.
+settings.mountForwardsAccelerationDuration = Doba zrychlování vpřed
+settings.mountForwardsAccelerationDuration.tooltip = Čas potřebný k dosažení maximální rychlosti při pohybu vpřed.
+settings.mountForwardsDecelerationDuration = Doba zpomalování vpřed
+settings.mountForwardsDecelerationDuration.tooltip = Čas potřebný k dosažení klidového stavu po pohybu vpřed.
+settings.mountBackwardsAccelerationDuration = Doba zrychlování vzad
+settings.mountBackwardsAccelerationDuration.tooltip = Čas potřebný k dosažení maximální rychlosti při pohybu vzad.
+settings.mountBackwardsDecelerationDuration = Doba zpomalování vzad
+settings.mountBackwardsDecelerationDuration.tooltip = Čas potřebný k dosažení klidového stavu po pohybu vzad.
+settings.mountForcedAccelerationMultiplierSetting = Násobič vynuceného zrychlení
+settings.mountForcedAccelerationMultiplierSetting.tooltip = Násobič používaný ke zkrácení doby zrychlení po stisknutí klávesy sprintu během pohybu.
+settings.mountForcedDecelerationMultiplierSetting = Násobič vynuceného zpomalení
+settings.mountForcedDecelerationMultiplierSetting.tooltip = Násobič používaný ke zkrácení doby zpomalování po zadání pohybu opačným směrem, než je aktuální rychlost.
+settings.mountRequireNewInput = Vyžadovat nový vstup po vynuceném zpomalení
+settings.mountRequireNewInput.tooltip = Určuje, zda je po vynuceném zpomalení nutné znovu zadat pohybový vstup pro pokračování.
+settings.displayTempPrefix = Zobrazovat značky [TMP] v textu
+
+settings.armorItemsPickupLocation = Položky zbroje
+settings.armorItemsPickupLocation.description = Určuje umístění, které má mít prioritu při ukládání předmětů při jejich sebrání.\n\
+<b><color is="#f1ba50">Panel rychlého přístupu</color></b>: Nové předměty budou nejprve umístěny do panelu rychlého přístupu a po jeho zaplnění budou přesunuty do inventáře.\n\
+<b><color is="#f1ba50">Inventář</color></b>: Nové předměty budou nejprve ukládány do inventáře a po jeho zaplnění budou přesunuty do panelu rychlého přístupu.
+
+settings.weaponAndToolItemsPickupLocation = Zbraně a nástroje
+settings.weaponAndToolItemsPickupLocation.description = Určuje umístění, které má mít prioritu při ukládání předmětů po jejich sebrání.\n\
+<b><color is="#f1ba50">Panel rychlého přístupu</color></b>: Nové předměty budou nejprve umístěny do panelu rychlého přístupu a po jeho zaplnění budou přesunuty do inventáře.\n\
+<b><color is="#f1ba50">Inventář</color></b>: Nové předměty budou nejprve ukládány do inventáře a po jeho zaplnění budou umístěny do panelu rychlého přístupu.
+
+settings.usableItemsPickupLocation = Použitelné předměty
+settings.usableItemsPickupLocation.description = Určuje umístění, které má mít prioritu při ukládání předmětů po jejich sebrání.\n\
+<b><color is="#f1ba50">Panel rychlého přístupu</color></b>: Nové předměty budou nejprve umístěny do panelu rychlého přístupu a po jeho zaplnění budou přesunuty do inventáře.\n\
+<b><color is="#f1ba50">Inventář</color></b>: Nové předměty budou nejprve ukládány do inventáře a po jeho zaplnění budou přesunuty do panelu rychlého přístupu.
+
+settings.solidBlockItemsPickupLocation = Položky z pevných bloků
+settings.solidBlockItemsPickupLocation.description = Určuje umístění, které má mít prioritu při ukládání předmětů po jejich sebrání.\n\
+<b><color is="#f1ba50">Panel rychlého přístupu</color></b>: Nové předměty budou nejprve umístěny do panelu rychlého přístupu a po jeho zaplnění budou přesunuty do inventáře.\n\
+<b><color is="#f1ba50">Inventář</color></b>: Nové předměty budou nejprve ukládány do inventáře a po jeho zaplnění budou přesunuty do panelu rychlého přístupu.
+
+settings.miscItemsPickupLocation = Různé předměty
+settings.miscItemsPickupLocation.description = Určuje umístění, které má mít prioritu při ukládání předmětů po jejich sebrání.\n\
+<b><color is="#f1ba50">Panel rychlého přístupu</color></b>: Nové předměty budou nejprve umístěny do panelu rychlého přístupu a po jeho zaplnění budou přesunuty do inventáře.\n\
+<b><color is="#f1ba50">Inventář</color></b>: Nové předměty budou nejprve ukládány do inventáře a po jeho zaplnění budou umístěny do panelu rychlého přístupu.
+
+settings.pickupLocation.hotbar = Panel nástrojů
+settings.pickupLocation.storage = Inventář
+
+settings.cameraBasedClimbing = Šplhání podle kamery
+settings.cameraBasedClimbing.description = Určuje způsob fungování šplhání.\n\
+<b><color is="#f1ba50">Zapnuto</color></b>: Pohyb vpřed tě posune směrem, kam se díváš.\n\
+<b><color is="#f1ba50">Vypnuto</color></b>: Pohyb bude vždy stejný bez ohledu na směr pohledu.
+
+settings.crouchBehavior = Chování při přikrčení
+settings.sprintBehavior = Chování sprintu
+settings.walkBehavior = Chování při chůzi
+settings.inputMode.hold = Podržet
+settings.inputMode.toggle = Přepnout
+
+settings.resetToDefaultsConfirmationModal.title = Obnovit výchozí nastavení
+settings.resetToDefaultsConfirmationModal.text = Opravdu chceš obnovit všechna nastavení na výchozí hodnoty?
+# === timeline ===
+timeline.frame = Rámec
+timeline.currentFrame = Rámec: {frame, number}
+
+timeline.tabs.properties = Vlastnosti
+timeline.tabs.events = Události
+
+timeline.toolbar.addActor = Přidat herce
+timeline.toolbar.restart = Restartovat ({keybind})
+timeline.toolbar.togglePause = Přepnout pauzu ({keybind})
+timeline.toolbar.toggleLoop = Přepnout smyčku
+
+timeline.events.add = Přidat událost
+
+# === Feedback Dialog ===
+feedback.title = Odeslat chybu nebo zpětnou vazbu
+feedback.selectType = Co chcete odeslat?
+
+feedback.feedback.title = Odeslat zpětnou vazbu
+feedback.feedback.description = Pomozte nám vylepšit Hytale sdílením svých názorů a návrhů.
+feedback.feedback.button.label = Komentáře
+feedback.feedback.button.tooltip = Odeslat zpětnou vazbu
+
+feedback.bugreport.title = Nahlásit chybu
+feedback.bugreport.description = Našli jste něco, co nefunguje? Dejte nám vědět, abychom to mohli opravit.
+feedback.bugreport.button.label = Nahlásit chybu
+feedback.bugreport.button.tooltip = Nahlásit chybu
+feedback.bugreport.includeLogFile = Zahrnout aktuální soubor logu
+
+feedback.type.feedback = Komentáře
+feedback.type.bugreport = Report o chybě
+
+feedback.warning.abuse = Zneužívání funkcí reportování chyb a zpětné vazby může vést k pozastavení účtu.
+
+feedback.field.type = Typ
+feedback.field.summary = Shrnutí
+feedback.field.summary.placeholder = Krátké shrnutí vašich komentářů nebo chyb
+feedback.field.description = Popis
+feedback.field.description.placeholder = Poskytněte podrobné informace o vaší zpětné vazbě nebo reportu o chybě.
+feedback.field.attachments = Přílohy
+
+feedback.attachments.addScreenshot = Přidat snímky obrazovky
+feedback.attachments.addLogFile = Přidat další soubory logu
+feedback.attachments.selectScreenshot = Vybrat snímky obrazovky k přiložení
+feedback.attachments.selectLogFile = Vybrat soubory logu k přiložení
+
+feedback.submit = Odeslat
+feedback.submitting = Odesílání...
+
+feedback.error.summaryRequired = Zadejte shrnutí.
+feedback.error.descriptionRequired = Zadejte popis.
+feedback.error.unknown = Došlo k chybě. Zkuste to znovu.
+feedback.error.maxAttachments = Můžete přiložit maximálně 3 soubory.
+feedback.error.fileTooLarge = "{file}" je příliš velký ({size} MB). Maximální velikost souboru je {maxSize}.
+feedback.error.invalidFileType = "{file}" není podporovaný typ souboru. Povoleny jsou pouze soubory .jpg, .jpeg, .png a .log.
+feedback.error.fileNotFound = "{file}" nebyl nalezen.
+feedback.error.fileError = "{file}" nelze přečíst.
+
+feedback.success.title = Děkujeme!
+feedback.success.feedback = Váš komentář byl úspěšně odeslán. Jsme vděčni za vaši zpětnou vazbu!
+feedback.success.bugreport = Váš report o chybě byl úspěšně odeslán. Prozkoumáme to!
+feedback.success.submitMore = Odeslat více
+
+
+bugReportButton.tooltip = Nahlásit chybu nebo odeslat zpětnou vazbu
